@@ -163,6 +163,8 @@ acer-compliance-engine/
 │   ├── regulations/
 │   ├── requirements/
 │   ├── systems/
+│   ├── groundtruth/
+│   ├── tactics/
 │   ├── llm/
 │   └── results/
 ├── scripts/
