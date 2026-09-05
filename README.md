@@ -166,7 +166,7 @@ acer-compliance-engine/
 │   ├── llm/
 │   └── results/
 ├── scripts/
-├── src/                  # if/when core modules are organized here
+├── src/                  
 ├── tests/
 ├── notebooks/
 ├── README.md
