@@ -125,7 +125,7 @@ Observed relative changes:
 - **Agentic vs fixed-order:** steps **-29.9%**, cost **-9.5%**
 - **LLM-assisted vs agentic without LLM:** steps **+27.7%**, cost **-1.5%**, complexity **-24.0%**
 
-These are descriptive benchmark results on synthetic systems. They should not be interpreted as statistically validated claims about general real-world performance.
+These are descriptive benchmark results on synthetic systems. 
 
 ## Human Review Status
 
@@ -173,7 +173,6 @@ acer-compliance-engine/
 └── requirements.txt
 ```
 
-Keep generated experiment outputs under `data/results/` so that benchmark artifacts remain separate from source code.
 
 ## Reproducibility
 
@@ -191,34 +190,6 @@ Randomized experiments should be run with explicit seeds.
 ## External Model Provider
 
 The LLM-assisted experiments were run using `openai-gpt-oss-120b` through a DigitalOcean-hosted API.
-
-**Do not commit API keys, `.env` files, virtual environments, or other credentials to GitHub.**
-
-Environment variables should be used for secrets, for example:
-
-```powershell
-$env:DIGITALOCEAN_TOKEN="YOUR_TOKEN"
-```
-
-Never replace `YOUR_TOKEN` with a real credential in the repository.
-
-## What Should Not Be Committed
-
-Do **not** push the following:
-
-```text
-.venv/
-venv/
-__pycache__/
-*.pyc
-.env
-.env.*
-*.pem
-*.key
-secrets/
-```
-
-Also exclude large temporary/cache files that are not required for reproduction.
 
 ## Research Limitations
 
@@ -248,12 +219,3 @@ Implemented components include:
 - initial human review of regulatory extraction
 - independent second human review **ongoing**
 
-## Suggested Citation / Attribution
-
-If this repository is used as part of an application, research discussion, or demonstration, describe it as an experimental prototype for automated compliance engineering and self-adaptive AI systems rather than as a production compliance product.
-
-## Author
-
-**Anuj Pal**
-
-This repository was developed as an independent research prototype to explore automated regulatory compliance engineering, agentic self-adaptation, and controlled LLM-assisted decision support.
