@@ -1,0 +1,21 @@
+source_id: EU-AI-ACT-EURLEX-CONSOLIDATED-2026-07-27
+regulation: Regulation (EU) 2024/1689
+celex: 02024R1689-20260727
+source_type: official_eur_lex
+language: EN
+version_date: '2026-07-27'
+retrieval_url: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727'
+pdf_url: 'https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02024R1689-20260727'
+eli_url: 'https://eur-lex.europa.eu/eli/reg/2024/1689/2026-07-27'
+selected_provisions:
+  - 'Article 9(1)-(2)'
+  - 'Article 10(1)-(2)'
+  - 'Article 12(1)-(2)'
+  - 'Article 13(1)'
+  - 'Article 14(1)-(4)'
+  - 'Article 14(4)(d)-(e)'
+  - 'Article 15(1)'
+  - 'Article 50(1)'
+notes:
+  legal_status: 'In force; consolidated version identified by EUR-Lex as 27/07/2026.'
+  caveat: 'This local snapshot and extracted text are research artifacts, not legal advice or an authoritative legal interpretation.'

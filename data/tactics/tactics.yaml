@@ -1,0 +1,63 @@
+tactics:
+  - id: ADD_HUMAN_REVIEW
+    name: Add human review
+    addresses_requirements: [R-HO-01]
+    compliance_gain: 1.0
+    cost: 1.0
+    disruption: 0.5
+    risk: 0.1
+    action:
+      type: add_component
+      id: human_review
+      component_type: human_review
+      properties: {can_override: true, can_stop: true}
+
+  - id: CONNECT_HUMAN_REVIEW
+    name: Connect human review
+    addresses_requirements: [R-IV-01]
+    compliance_gain: 1.0
+    cost: 0.5
+    disruption: 0.5
+    risk: 0.1
+    action:
+      type: add_flow
+      source: human_review
+      target: final_decision
+      data: candidate_data
+
+  - id: ENABLE_DECISION_LOGGING
+    name: Enable decision logging
+    addresses_requirements: [R-LOG-01]
+    compliance_gain: 1.0
+    cost: 0.2
+    disruption: 0.1
+    risk: 0.0
+    action:
+      type: set_property
+      component_id: final_decision
+      property: logging_enabled
+      value: true
+
+  - id: ENABLE_TRANSPARENCY_NOTICE
+    name: Enable transparency notice
+    addresses_requirements: [R-TR-01]
+    compliance_gain: 1.0
+    cost: 0.1
+    disruption: 0.0
+    risk: 0.0
+    action:
+      type: set_attribute
+      attribute: transparency_notice
+      value: true
+
+  - id: ENABLE_FAIRNESS_MONITORING
+    name: Enable fairness monitoring
+    addresses_requirements: [R-FAIR-01]
+    compliance_gain: 1.0
+    cost: 0.4
+    disruption: 0.2
+    risk: 0.1
+    action:
+      type: set_attribute
+      attribute: fairness_tested
+      value: true

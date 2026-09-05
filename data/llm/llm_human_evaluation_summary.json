@@ -1,0 +1,24 @@
+{
+  "candidate_count": 70,
+  "reviewed_candidates": 70,
+  "review_completion": 1.0,
+  "relevance_distribution": {
+    "EXACT_MATCH": 6,
+    "PARTIAL_MATCH": 27,
+    "OTHER": 37
+  },
+  "supported_candidate_rate": 0.4714285714285714,
+  "exact_match_rate": 0.08571428571428572,
+  "gold_requirements": 8,
+  "gold_requirements_covered": 8,
+  "gold_requirements_missing": [],
+  "dimension_scores": {
+    "obligation_exact_rate": 1.0,
+    "applicability_correct_rate": 0.9714285714285714,
+    "applicability_at_least_partial": 1.0,
+    "machine_constraint_exact_rate": 0.0,
+    "machine_constraint_at_least_partial": 1.0,
+    "provenance_exact_rate": 1.0
+  },
+  "method_note": "Single-reviewer annotation against the current eight-item curated ACER reference set. OTHER does not mean legally wrong; it means a legitimate candidate outside the current reference set."
+}

@@ -1,0 +1,63 @@
+source:
+  celex: 02024R1689-20260727
+  consolidated_version: 27 July 2026
+  source_url: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727
+  local_snapshot: data/regulations/eu_ai_act_source.html
+  sha256: cba54f3a0c4c701ff51bcb9618f68b6795b0c980494f00bc9c51ba727224cf30
+requirements:
+- requirement_id: EUAI-R9-01
+  title: Risk management system
+  provision: Article 9(1)-(2)
+  source_article: Article 9(1)-(2)
+  source_url: https://eur-lex.europa.eu/eli/reg/2024/1689
+  source_snapshot_sha256: cba54f3a0c4c701ff51bcb9618f68b6795b0c980494f00bc9c51ba727224cf30
+  formalization_status: CURATED_ACER_REQUIREMENT
+- requirement_id: EUAI-R10-01
+  title: Data governance and management practices
+  provision: Article 10(1)-(2)
+  source_article: Article 10(1)-(2)
+  source_url: https://eur-lex.europa.eu/eli/reg/2024/1689
+  source_snapshot_sha256: cba54f3a0c4c701ff51bcb9618f68b6795b0c980494f00bc9c51ba727224cf30
+  formalization_status: CURATED_ACER_REQUIREMENT
+- requirement_id: EUAI-R12-01
+  title: Automatic event logging
+  provision: Article 12(1)-(2)
+  source_article: Article 12(1)-(2)
+  source_url: https://eur-lex.europa.eu/eli/reg/2024/1689
+  source_snapshot_sha256: cba54f3a0c4c701ff51bcb9618f68b6795b0c980494f00bc9c51ba727224cf30
+  formalization_status: CURATED_ACER_REQUIREMENT
+- requirement_id: EUAI-R13-01
+  title: Transparency and interpretability for deployers
+  provision: Article 13(1)
+  source_article: Article 13(1)
+  source_url: https://eur-lex.europa.eu/eli/reg/2024/1689
+  source_snapshot_sha256: cba54f3a0c4c701ff51bcb9618f68b6795b0c980494f00bc9c51ba727224cf30
+  formalization_status: CURATED_ACER_REQUIREMENT
+- requirement_id: EUAI-R14-01
+  title: Effective human oversight
+  provision: Article 14(1)-(4)
+  source_article: Article 14(1)-(4)
+  source_url: https://eur-lex.europa.eu/eli/reg/2024/1689
+  source_snapshot_sha256: cba54f3a0c4c701ff51bcb9618f68b6795b0c980494f00bc9c51ba727224cf30
+  formalization_status: CURATED_ACER_REQUIREMENT
+- requirement_id: EUAI-R14-02
+  title: Override and interruption capability
+  provision: Article 14(4)(d)-(e)
+  source_article: Article 14(4)(d)-(e)
+  source_url: https://eur-lex.europa.eu/eli/reg/2024/1689
+  source_snapshot_sha256: cba54f3a0c4c701ff51bcb9618f68b6795b0c980494f00bc9c51ba727224cf30
+  formalization_status: CURATED_ACER_REQUIREMENT
+- requirement_id: EUAI-R15-01
+  title: Accuracy, robustness and cybersecurity
+  provision: Article 15(1)
+  source_article: Article 15(1)
+  source_url: https://eur-lex.europa.eu/eli/reg/2024/1689
+  source_snapshot_sha256: cba54f3a0c4c701ff51bcb9618f68b6795b0c980494f00bc9c51ba727224cf30
+  formalization_status: CURATED_ACER_REQUIREMENT
+- requirement_id: EUAI-R50-01
+  title: Inform people when they directly interact with AI
+  provision: Article 50(1)
+  source_article: Article 50(1)
+  source_url: https://eur-lex.europa.eu/eli/reg/2024/1689
+  source_snapshot_sha256: cba54f3a0c4c701ff51bcb9618f68b6795b0c980494f00bc9c51ba727224cf30
+  formalization_status: CURATED_ACER_REQUIREMENT

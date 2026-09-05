@@ -1,0 +1,99 @@
+requirements:
+  - id: R-HO-01
+    title: Human oversight
+    regulation: Synthetic-AI-Demo
+    provision: DEMO-HO
+    category: human_oversight
+    obligation: A human review component must exist before final decision.
+    actor: deployer
+    condition: {system_uses_automated_decision: true}
+    system_property: human_review_component
+    rule: required_component
+    parameters: {component_type: human_review}
+    evidence_expected: [architecture_component]
+    adaptation_tactics: [ADD_HUMAN_REVIEW]
+    provenance:
+      source_type: synthetic
+      source_id: SYNTH-AI-DEMO
+      source_url: null
+      provision: DEMO-HO
+      validation_status: UNVALIDATED
+
+  - id: R-IV-01
+    title: Human intervention path
+    regulation: Synthetic-AI-Demo
+    provision: DEMO-INTERVENTION
+    category: intervenience
+    obligation: Human review must connect to final decision.
+    actor: deployer
+    condition: {system_uses_automated_decision: true}
+    system_property: human_intervention_path
+    rule: required_flow
+    parameters: {source_type: human_review, target_type: final_decision}
+    evidence_expected: [architecture_flow]
+    adaptation_tactics: [CONNECT_HUMAN_REVIEW]
+    provenance:
+      source_type: synthetic
+      source_id: SYNTH-AI-DEMO
+      provision: DEMO-INTERVENTION
+      validation_status: UNVALIDATED
+
+  - id: R-LOG-01
+    title: Decision logging
+    regulation: Synthetic-AI-Demo
+    provision: DEMO-LOGGING
+    category: logging
+    obligation: Final decisions must be logged.
+    actor: operator
+    condition: {system_produces_decisions: true}
+    system_property: decision_logging
+    rule: property_equals
+    parameters:
+      component_type: final_decision
+      property: logging_enabled
+      expected: true
+    evidence_expected: [configuration]
+    adaptation_tactics: [ENABLE_DECISION_LOGGING]
+    provenance:
+      source_type: synthetic
+      source_id: SYNTH-AI-DEMO
+      provision: DEMO-LOGGING
+      validation_status: UNVALIDATED
+
+  - id: R-TR-01
+    title: Transparency notice
+    regulation: Synthetic-AI-Demo
+    provision: DEMO-TRANSPARENCY
+    category: transparency
+    obligation: The system must expose a transparency notice.
+    actor: deployer
+    condition: {direct_human_interaction: true}
+    system_property: transparency_notice
+    rule: attribute_equals
+    parameters: {attribute: transparency_notice, expected: true}
+    evidence_expected: [system_attribute]
+    adaptation_tactics: [ENABLE_TRANSPARENCY_NOTICE]
+    provenance:
+      source_type: synthetic
+      source_id: SYNTH-AI-DEMO
+      provision: DEMO-TRANSPARENCY
+      validation_status: UNVALIDATED
+
+  - id: R-FAIR-01
+    title: Fairness testing
+    regulation: Synthetic-AI-Demo
+    provision: DEMO-FAIRNESS
+    category: fairness
+    obligation: Required fairness testing evidence must exist.
+    actor: provider
+    condition: {decision_system: true}
+    system_property: fairness_tested
+    rule: attribute_equals
+    parameters: {attribute: fairness_tested, expected: true}
+    evidence_expected: [system_attribute]
+    adaptation_tactics: [ENABLE_FAIRNESS_MONITORING]
+    provenance:
+      source_type: synthetic
+      source_id: SYNTH-AI-DEMO
+      provision: DEMO-FAIRNESS
+      validation_status: UNVALIDATED

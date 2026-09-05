@@ -1,0 +1,47 @@
+source: data/ground_truth/eu_ai_act_benchmark_spec.yaml
+count: 21
+requirements: 8
+ground_truth_rows: 168
+cases:
+- system_id: ai-act-benchmark-clean_001
+  type: clean
+- system_id: ai-act-benchmark-clean_002
+  type: clean
+- system_id: ai-act-benchmark-clean_003
+  type: clean
+- system_id: ai-act-benchmark-clean_004
+  type: clean
+- system_id: ai-act-benchmark-clean_005
+  type: clean
+- system_id: ai-act-benchmark-fail_r9_001
+  type: single_violation
+- system_id: ai-act-benchmark-fail_r10_001
+  type: single_violation
+- system_id: ai-act-benchmark-fail_r12_001
+  type: single_violation
+- system_id: ai-act-benchmark-fail_r13_001
+  type: single_violation
+- system_id: ai-act-benchmark-fail_r14_001
+  type: single_violation
+- system_id: ai-act-benchmark-fail_r14_002
+  type: single_violation
+- system_id: ai-act-benchmark-fail_r15_001
+  type: single_violation
+- system_id: ai-act-benchmark-fail_r50_001
+  type: single_violation
+- system_id: ai-act-benchmark-fail_r9_r10_001
+  type: multi_violation
+- system_id: ai-act-benchmark-fail_r12_r13_001
+  type: multi_violation
+- system_id: ai-act-benchmark-fail_r14_pair_001
+  type: multi_violation
+- system_id: ai-act-benchmark-fail_r15_r50_001
+  type: multi_violation
+- system_id: ai-act-benchmark-fail_four_controls_001
+  type: multi_violation
+- system_id: ai-act-benchmark-na_r50_001
+  type: applicability
+- system_id: ai-act-benchmark-na_r10_001
+  type: applicability
+- system_id: ai-act-benchmark-na_high_risk_001
+  type: applicability

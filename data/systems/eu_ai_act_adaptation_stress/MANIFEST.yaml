@@ -1,0 +1,21 @@
+benchmark: ACER adaptation interaction stress benchmark
+systems: 12
+scenario_ids:
+- ai-act-stress-dual_transparency
+- ai-act-stress-dual_human_oversight
+- ai-act-stress-dual_risk_data
+- ai-act-stress-dual_logging_performance
+- ai-act-stress-four_controls
+- ai-act-stress-human_and_transparency
+- ai-act-stress-operational_bundle
+- ai-act-stress-all_eight
+- ai-act-stress-three_way_transparency_risk
+- ai-act-stress-three_way_oversight_ops
+- ai-act-stress-mixed_risk_perf_notice
+- ai-act-stress-mixed_data_log_human
+designed_interactions:
+- multi-violation systems
+- bundled adaptations that repair multiple requirements simultaneously
+- shared human-oversight intervention structures
+grounding: Uses the same 8 curated ACER requirements and deterministic assessor as
+  the primary benchmark.

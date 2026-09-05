@@ -1,0 +1,17 @@
+document: Regulation (EU) 2024/1689 (Artificial Intelligence Act)
+celex: 02024R1689-20260727
+consolidated_version: 27 July 2026
+source_url: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727
+local_source: data/regulations/eu_ai_act_source.html
+retrieval_date: '2026-09-03'
+sha256: cba54f3a0c4c701ff51bcb9618f68b6795b0c980494f00bc9c51ba727224cf30
+source_status: LOCAL_OFFICIAL_SOURCE_SNAPSHOT
+parser: standalone_article_heading_parser_v2
+articles_extracted:
+- 9
+- 10
+- 12
+- 13
+- 14
+- 15
+- 50

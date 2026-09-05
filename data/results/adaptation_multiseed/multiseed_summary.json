@@ -1,0 +1,227 @@
+{
+  "method": "paired multi-seed robustness evaluation",
+  "seeds": [
+    20260904,
+    20260905,
+    20260906
+  ],
+  "systems_per_seed": 100,
+  "per_seed": [
+    {
+      "seed": 20260904,
+      "systems": 100,
+      "deterministic_conditions": {
+        "FIXED_ORDER": {
+          "strategy": "FIXED_ORDER",
+          "systems": 100,
+          "violations_before": 421,
+          "violations_after": 0,
+          "violation_reduction_rate": 1.0,
+          "systems_compliant_after": 100,
+          "system_compliance_rate_after": 1.0,
+          "accepted_adaptation_steps": 421,
+          "mean_steps_per_system": 4.21,
+          "total_cost": 816,
+          "mean_cost_per_system": 8.16,
+          "total_complexity": 496,
+          "mean_complexity_per_system": 4.96,
+          "new_failures_total": 0
+        },
+        "CHEAPEST_GREEDY": {
+          "strategy": "CHEAPEST_GREEDY",
+          "systems": 100,
+          "violations_before": 421,
+          "violations_after": 0,
+          "violation_reduction_rate": 1.0,
+          "systems_compliant_after": 100,
+          "system_compliance_rate_after": 1.0,
+          "accepted_adaptation_steps": 421,
+          "mean_steps_per_system": 4.21,
+          "total_cost": 816,
+          "mean_cost_per_system": 8.16,
+          "total_complexity": 496,
+          "mean_complexity_per_system": 4.96,
+          "new_failures_total": 0
+        },
+        "AGENTIC": {
+          "strategy": "AGENTIC",
+          "systems": 100,
+          "violations_before": 421,
+          "violations_after": 0,
+          "violation_reduction_rate": 1.0,
+          "systems_compliant_after": 100,
+          "system_compliance_rate_after": 1.0,
+          "accepted_adaptation_steps": 298,
+          "mean_steps_per_system": 2.98,
+          "total_cost": 746,
+          "mean_cost_per_system": 7.46,
+          "total_complexity": 596,
+          "mean_complexity_per_system": 5.96,
+          "new_failures_total": 0
+        }
+      },
+      "llm_assisted": null,
+      "llm_metrics": null,
+      "llm_result_source": null
+    },
+    {
+      "seed": 20260905,
+      "systems": 100,
+      "deterministic_conditions": {
+        "FIXED_ORDER": {
+          "strategy": "FIXED_ORDER",
+          "systems": 100,
+          "violations_before": 422,
+          "violations_after": 0,
+          "violation_reduction_rate": 1.0,
+          "systems_compliant_after": 100,
+          "system_compliance_rate_after": 1.0,
+          "accepted_adaptation_steps": 422,
+          "mean_steps_per_system": 4.22,
+          "total_cost": 819,
+          "mean_cost_per_system": 8.19,
+          "total_complexity": 493,
+          "mean_complexity_per_system": 4.93,
+          "new_failures_total": 0
+        },
+        "CHEAPEST_GREEDY": {
+          "strategy": "CHEAPEST_GREEDY",
+          "systems": 100,
+          "violations_before": 422,
+          "violations_after": 0,
+          "violation_reduction_rate": 1.0,
+          "systems_compliant_after": 100,
+          "system_compliance_rate_after": 1.0,
+          "accepted_adaptation_steps": 422,
+          "mean_steps_per_system": 4.22,
+          "total_cost": 819,
+          "mean_cost_per_system": 8.19,
+          "total_complexity": 493,
+          "mean_complexity_per_system": 4.93,
+          "new_failures_total": 0
+        },
+        "AGENTIC": {
+          "strategy": "AGENTIC",
+          "systems": 100,
+          "violations_before": 422,
+          "violations_after": 0,
+          "violation_reduction_rate": 1.0,
+          "systems_compliant_after": 100,
+          "system_compliance_rate_after": 1.0,
+          "accepted_adaptation_steps": 295,
+          "mean_steps_per_system": 2.95,
+          "total_cost": 735,
+          "mean_cost_per_system": 7.35,
+          "total_complexity": 590,
+          "mean_complexity_per_system": 5.9,
+          "new_failures_total": 0
+        }
+      },
+      "llm_assisted": null,
+      "llm_metrics": null,
+      "llm_result_source": null
+    },
+    {
+      "seed": 20260906,
+      "systems": 100,
+      "deterministic_conditions": {
+        "FIXED_ORDER": {
+          "strategy": "FIXED_ORDER",
+          "systems": 100,
+          "violations_before": 421,
+          "violations_after": 0,
+          "violation_reduction_rate": 1.0,
+          "systems_compliant_after": 100,
+          "system_compliance_rate_after": 1.0,
+          "accepted_adaptation_steps": 421,
+          "mean_steps_per_system": 4.21,
+          "total_cost": 808,
+          "mean_cost_per_system": 8.08,
+          "total_complexity": 490,
+          "mean_complexity_per_system": 4.9,
+          "new_failures_total": 0
+        },
+        "CHEAPEST_GREEDY": {
+          "strategy": "CHEAPEST_GREEDY",
+          "systems": 100,
+          "violations_before": 421,
+          "violations_after": 0,
+          "violation_reduction_rate": 1.0,
+          "systems_compliant_after": 100,
+          "system_compliance_rate_after": 1.0,
+          "accepted_adaptation_steps": 421,
+          "mean_steps_per_system": 4.21,
+          "total_cost": 808,
+          "mean_cost_per_system": 8.08,
+          "total_complexity": 490,
+          "mean_complexity_per_system": 4.9,
+          "new_failures_total": 0
+        },
+        "AGENTIC": {
+          "strategy": "AGENTIC",
+          "systems": 100,
+          "violations_before": 421,
+          "violations_after": 0,
+          "violation_reduction_rate": 1.0,
+          "systems_compliant_after": 100,
+          "system_compliance_rate_after": 1.0,
+          "accepted_adaptation_steps": 293,
+          "mean_steps_per_system": 2.93,
+          "total_cost": 729,
+          "mean_cost_per_system": 7.29,
+          "total_complexity": 586,
+          "mean_complexity_per_system": 5.86,
+          "new_failures_total": 0
+        }
+      },
+      "llm_assisted": null,
+      "llm_metrics": null,
+      "llm_result_source": null
+    }
+  ],
+  "deterministic_aggregate": {
+    "FIXED_ORDER": {
+      "violations_before_mean": 421.3333333333333,
+      "violations_before_population_sd": 0.4714045207910317,
+      "violations_after_mean": 0,
+      "violations_after_population_sd": 0.0,
+      "accepted_adaptation_steps_mean": 421.3333333333333,
+      "accepted_adaptation_steps_population_sd": 0.4714045207910317,
+      "total_cost_mean": 814.3333333333334,
+      "total_cost_population_sd": 4.642796092394707,
+      "total_complexity_mean": 493,
+      "total_complexity_population_sd": 2.449489742783178,
+      "new_failures_total_mean": 0,
+      "new_failures_total_population_sd": 0.0
+    },
+    "CHEAPEST_GREEDY": {
+      "violations_before_mean": 421.3333333333333,
+      "violations_before_population_sd": 0.4714045207910317,
+      "violations_after_mean": 0,
+      "violations_after_population_sd": 0.0,
+      "accepted_adaptation_steps_mean": 421.3333333333333,
+      "accepted_adaptation_steps_population_sd": 0.4714045207910317,
+      "total_cost_mean": 814.3333333333334,
+      "total_cost_population_sd": 4.642796092394707,
+      "total_complexity_mean": 493,
+      "total_complexity_population_sd": 2.449489742783178,
+      "new_failures_total_mean": 0,
+      "new_failures_total_population_sd": 0.0
+    },
+    "AGENTIC": {
+      "violations_before_mean": 421.3333333333333,
+      "violations_before_population_sd": 0.4714045207910317,
+      "violations_after_mean": 0,
+      "violations_after_population_sd": 0.0,
+      "accepted_adaptation_steps_mean": 295.3333333333333,
+      "accepted_adaptation_steps_population_sd": 2.0548046676563256,
+      "total_cost_mean": 736.6666666666666,
+      "total_cost_population_sd": 7.039570693980958,
+      "total_complexity_mean": 590.6666666666666,
+      "total_complexity_population_sd": 4.109609335312651,
+      "new_failures_total_mean": 0,
+      "new_failures_total_population_sd": 0.0
+    }
+  },
+  "guardrail": "Synthetic multi-seed benchmark evidence only. Reused LLM results are explicitly marked by source. Report per-seed values and dispersion; do not treat this as legal compliance or proof of superiority on unseen systems."
+}

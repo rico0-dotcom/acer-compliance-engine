@@ -1,0 +1,179 @@
+{
+  "method": "paired descriptive three-way statistical evaluation over saved ACER multi-seed results",
+  "seeds": [
+    20260904,
+    20260905,
+    20260906
+  ],
+  "systems_per_seed": 100,
+  "total_systems": 300,
+  "comparisons": {
+    "AGENTIC_vs_FIXED_ORDER": {
+      "steps": {
+        "n": 3,
+        "mean_difference": -126,
+        "median_difference": -127,
+        "population_sd_difference": 2.160246899469287,
+        "mean_absolute_difference": 126,
+        "direction_counts": {
+          "a_greater": 0,
+          "equal": 0,
+          "b_greater": 3
+        }
+      },
+      "cost": {
+        "n": 3,
+        "mean_difference": -77.66666666666667,
+        "median_difference": -79,
+        "population_sd_difference": 5.792715732327589,
+        "mean_absolute_difference": 77.66666666666667,
+        "direction_counts": {
+          "a_greater": 0,
+          "equal": 0,
+          "b_greater": 3
+        }
+      },
+      "complexity": {
+        "n": 3,
+        "mean_difference": 97.66666666666667,
+        "median_difference": 97,
+        "population_sd_difference": 1.699673171197595,
+        "mean_absolute_difference": 97.66666666666667,
+        "direction_counts": {
+          "a_greater": 3,
+          "equal": 0,
+          "b_greater": 0
+        }
+      },
+      "mean_step_change_rate": -0.29905063291139244,
+      "mean_cost_change_rate": -0.09537453950061409,
+      "mean_complexity_change_rate": 0.19810682893847187
+    },
+    "AGENTIC_NO_LLM_vs_AGENTIC_LLM": {
+      "steps": {
+        "n": 3,
+        "mean_difference": -81.66666666666667,
+        "median_difference": -83,
+        "population_sd_difference": 2.6246692913372702,
+        "mean_absolute_difference": 81.66666666666667,
+        "direction_counts": {
+          "a_greater": 0,
+          "equal": 0,
+          "b_greater": 3
+        }
+      },
+      "cost": {
+        "n": 3,
+        "mean_difference": 11.0,
+        "median_difference": 9.0,
+        "population_sd_difference": 6.683312551921141,
+        "mean_absolute_difference": 11.0,
+        "direction_counts": {
+          "a_greater": 3,
+          "equal": 0,
+          "b_greater": 0
+        }
+      },
+      "complexity": {
+        "n": 3,
+        "mean_difference": 142.0,
+        "median_difference": 141.0,
+        "population_sd_difference": 2.160246899469287,
+        "mean_absolute_difference": 142.0,
+        "direction_counts": {
+          "a_greater": 3,
+          "equal": 0,
+          "b_greater": 0
+        }
+      },
+      "mean_step_change_rate": 0.2765237020316028,
+      "mean_cost_change_rate": -0.01493212669683258,
+      "mean_complexity_change_rate": -0.24040632054176064,
+      "llm_calls": [
+        376,
+        378,
+        377
+      ],
+      "llm_failures": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "seed_values": {
+    "FIXED_ORDER": {
+      "steps": [
+        421,
+        422,
+        421
+      ],
+      "cost": [
+        816,
+        819,
+        808
+      ],
+      "complexity": [
+        496,
+        493,
+        490
+      ]
+    },
+    "AGENTIC": {
+      "steps": [
+        298,
+        295,
+        293
+      ],
+      "cost": [
+        746,
+        735,
+        729
+      ],
+      "complexity": [
+        596,
+        590,
+        586
+      ]
+    },
+    "AGENTIC_LLM": {
+      "steps": [
+        376,
+        378,
+        377
+      ],
+      "cost": [
+        726.0,
+        731.0,
+        720.0
+      ],
+      "complexity": [
+        451.0,
+        449.0,
+        446.0
+      ],
+      "llm_calls": [
+        376,
+        378,
+        377
+      ],
+      "llm_failures": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "llm_result_sources": [
+    "F:\\KU Levan\\ACER_compliance_engine_starter\\acer_compliance_engine_v3_2\\data\\results\\llm_randomized\\llm_assisted_adaptation_runs.json",
+    "F:\\KU Levan\\ACER_compliance_engine_starter\\acer_compliance_engine_v3_2\\data\\results\\adaptation_multiseed\\seed_20260905\\llm_assisted\\llm_assisted_adaptation_runs.json",
+    "F:\\KU Levan\\ACER_compliance_engine_starter\\acer_compliance_engine_v3_2\\data\\results\\adaptation_multiseed\\seed_20260906\\llm_assisted\\llm_assisted_adaptation_runs.json"
+  ],
+  "guardrails": [
+    "Descriptive paired analysis over three seeds; no statistical significance claim is made.",
+    "Modeled cost and complexity are benchmark quantities, not measured real-world engineering cost or complexity.",
+    "All compliance outcomes remain determined by the deterministic ACER assessor.",
+    "Synthetic benchmark evidence does not establish legal compliance or superiority on unseen systems.",
+    "The LLM comparison reuses completed GPT-oss runs and does not make new model calls."
+  ]
+}

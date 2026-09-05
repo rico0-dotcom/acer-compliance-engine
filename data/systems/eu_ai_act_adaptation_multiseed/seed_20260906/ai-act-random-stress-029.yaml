@@ -1,0 +1,39 @@
+id: ai-act-random-stress-029
+name: ACER randomized adaptation stress - ai-act-random-stress-029
+domain: synthetic randomized adaptation stress benchmark
+version: '1.0'
+components:
+- id: ai_model
+  type: ai_model
+  properties: {}
+- id: candidate_ui
+  type: user_interface
+  properties: {}
+- id: final_decision
+  type: final_decision
+  properties:
+    logging_enabled: false
+- id: risk_management
+  type: risk_management
+  properties: {}
+- id: human_review
+  type: human_review
+  properties:
+    monitoring: true
+    understands_output: true
+- id: performance_monitoring
+  type: performance_monitoring
+  properties: {}
+data:
+- id: training_data
+  type: dataset
+flows:
+- source: human_review
+  target: final_decision
+  data: decision_intervention
+attributes:
+  system_is_high_risk: true
+  uses_training_data: true
+  direct_ai_interaction: true
+  transparency_notice: false
+objectives: {}

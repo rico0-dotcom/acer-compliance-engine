@@ -1,0 +1,6 @@
+cases:
+  - {system_id: recruitment-ai-01, requirement_id: R-HO-01, expected_status: FAIL}
+  - {system_id: recruitment-ai-01, requirement_id: R-IV-01, expected_status: FAIL}
+  - {system_id: recruitment-ai-01, requirement_id: R-LOG-01, expected_status: FAIL}
+  - {system_id: recruitment-ai-01, requirement_id: R-TR-01, expected_status: FAIL}
+  - {system_id: recruitment-ai-01, requirement_id: R-FAIR-01, expected_status: FAIL}

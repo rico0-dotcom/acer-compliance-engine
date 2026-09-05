@@ -1,0 +1,198 @@
+requirements:
+
+  - id: EUAI-R9-01
+    title: Risk management system
+    regulation: Regulation (EU) 2024/1689
+    provision: Article 9(1)-(2)
+    category: risk_management
+    obligation: For a high-risk AI system, establish, implement, document and maintain a risk-management system as a continuous iterative lifecycle process.
+    actor: provider
+    condition:
+      system_is_high_risk: true
+    system_property: risk_management_process
+    rule: required_component
+    parameters:
+      component_type: risk_management
+    evidence_expected: [architecture_component, lifecycle_process]
+    adaptation_tactics: [ADD_RISK_MANAGEMENT]
+    provenance:
+      source_type: official_eur_lex
+      source_id: CELEX:32024R1689
+      source_url: https://eur-lex.europa.eu/eli/reg/2024/1689
+      provision: Article 9(1)-(2)
+      retrieval_date: "2026-09-03"
+      validator: ACER
+      validation_status: HUMAN_VALIDATED
+
+  - id: EUAI-R10-01
+    title: Data governance and management practices
+    regulation: Regulation (EU) 2024/1689
+    provision: Article 10(1)-(2)
+    category: data_governance
+    obligation: For a high-risk AI system using training techniques, training, validation and testing datasets must be subject to appropriate data governance and management practices and prescribed quality criteria.
+    actor: provider
+    condition:
+      system_is_high_risk: true
+      uses_training_data: true
+    system_property: data_governance
+    rule: required_component
+    parameters:
+      component_type: data_governance
+    evidence_expected: [architecture_component, data_governance_record]
+    adaptation_tactics: [ADD_DATA_GOVERNANCE]
+    provenance:
+      source_type: official_eur_lex
+      source_id: CELEX:32024R1689
+      source_url: https://eur-lex.europa.eu/eli/reg/2024/1689
+      provision: Article 10(1)-(2)
+      retrieval_date: "2026-09-03"
+      validator: ACER
+      validation_status: HUMAN_VALIDATED
+
+  - id: EUAI-R12-01
+    title: Automatic event logging
+    regulation: Regulation (EU) 2024/1689
+    provision: Article 12(1)-(2)
+    category: logging
+    obligation: High-risk AI systems must technically allow the automatic recording of events over the system lifetime for traceability.
+    actor: provider
+    condition:
+      system_is_high_risk: true
+    system_property: automatic_event_logging
+    rule: property_equals
+    parameters:
+      component_type: final_decision
+      property: logging_enabled
+      expected: true
+    evidence_expected: [configuration, log_schema]
+    adaptation_tactics: [ENABLE_DECISION_LOGGING]
+    provenance:
+      source_type: official_eur_lex
+      source_id: CELEX:32024R1689
+      source_url: https://eur-lex.europa.eu/eli/reg/2024/1689
+      provision: Article 12(1)-(2)
+      retrieval_date: "2026-09-03"
+      validator: ACER
+      validation_status: HUMAN_VALIDATED
+
+  - id: EUAI-R13-01
+    title: Transparency and interpretability for deployers
+    regulation: Regulation (EU) 2024/1689
+    provision: Article 13(1)
+    category: transparency
+    obligation: High-risk AI systems must be designed so that their operation is sufficiently transparent to enable deployers to interpret outputs and use them appropriately.
+    actor: provider
+    condition:
+      system_is_high_risk: true
+    system_property: transparency_mechanism
+    rule: required_component
+    parameters:
+      component_type: transparency_mechanism
+    evidence_expected: [architecture_component, user_information]
+    adaptation_tactics: [ENABLE_TRANSPARENCY_MECHANISM]
+    provenance:
+      source_type: official_eur_lex
+      source_id: CELEX:32024R1689
+      source_url: https://eur-lex.europa.eu/eli/reg/2024/1689
+      provision: Article 13(1)
+      retrieval_date: "2026-09-03"
+      validator: ACER
+      validation_status: HUMAN_VALIDATED
+
+  - id: EUAI-R14-01
+    title: Effective human oversight
+    regulation: Regulation (EU) 2024/1689
+    provision: Article 14(1)-(4)
+    category: human_oversight
+    obligation: High-risk AI systems must enable effective human oversight during use, including appropriate understanding of limitations and the ability to act on system outputs.
+    actor: provider
+    condition:
+      system_is_high_risk: true
+    system_property: human_oversight
+    rule: required_component
+    parameters:
+      component_type: human_review
+    evidence_expected: [architecture_component, oversight_interface]
+    adaptation_tactics: [ADD_HUMAN_REVIEW]
+    provenance:
+      source_type: official_eur_lex
+      source_id: CELEX:32024R1689
+      source_url: https://eur-lex.europa.eu/eli/reg/2024/1689
+      provision: Article 14(1)-(4)
+      retrieval_date: "2026-09-03"
+      validator: ACER
+      validation_status: HUMAN_VALIDATED
+
+  - id: EUAI-R14-02
+    title: Override and interruption capability
+    regulation: Regulation (EU) 2024/1689
+    provision: Article 14(4)(d)-(e)
+    category: intervenience
+    obligation: Where appropriate, human overseers must be able to disregard, override or reverse outputs and intervene in or interrupt operation.
+    actor: provider
+    condition:
+      system_is_high_risk: true
+    system_property: intervention_path
+    rule: required_flow
+    parameters:
+      source_type: human_review
+      target_type: final_decision
+    evidence_expected: [architecture_flow, override_mechanism, stop_mechanism]
+    adaptation_tactics: [CONNECT_HUMAN_REVIEW]
+    provenance:
+      source_type: official_eur_lex
+      source_id: CELEX:32024R1689
+      source_url: https://eur-lex.europa.eu/eli/reg/2024/1689
+      provision: Article 14(4)(d)-(e)
+      retrieval_date: "2026-09-03"
+      validator: ACER
+      validation_status: HUMAN_VALIDATED
+
+  - id: EUAI-R15-01
+    title: Accuracy, robustness and cybersecurity
+    regulation: Regulation (EU) 2024/1689
+    provision: Article 15(1)
+    category: security
+    obligation: High-risk AI systems must achieve appropriate levels of accuracy, robustness and cybersecurity and perform consistently in those respects.
+    actor: provider
+    condition:
+      system_is_high_risk: true
+    system_property: performance_controls
+    rule: required_component
+    parameters:
+      component_type: performance_monitoring
+    evidence_expected: [monitoring_component, performance_metrics]
+    adaptation_tactics: [ADD_PERFORMANCE_MONITORING]
+    provenance:
+      source_type: official_eur_lex
+      source_id: CELEX:32024R1689
+      source_url: https://eur-lex.europa.eu/eli/reg/2024/1689
+      provision: Article 15(1)
+      retrieval_date: "2026-09-03"
+      validator: ACER
+      validation_status: HUMAN_VALIDATED
+
+  - id: EUAI-R50-01
+    title: Inform people when they directly interact with AI
+    regulation: Regulation (EU) 2024/1689
+    provision: Article 50(1)
+    category: transparency
+    obligation: Providers of AI systems intended to interact directly with people must design the system so the individuals concerned are informed that they are interacting with an AI system, unless this is obvious from the circumstances and context.
+    actor: provider
+    condition:
+      direct_ai_interaction: true
+    system_property: ai_interaction_notice
+    rule: attribute_equals
+    parameters:
+      attribute: transparency_notice
+      expected: true
+    evidence_expected: [interface_notice]
+    adaptation_tactics: [ENABLE_TRANSPARENCY_NOTICE]
+    provenance:
+      source_type: official_eur_lex
+      source_id: CELEX:32024R1689
+      source_url: https://eur-lex.europa.eu/eli/reg/2024/1689
+      provision: Article 50(1)
+      retrieval_date: "2026-09-03"
+      validator: ACER
+      validation_status: HUMAN_VALIDATED

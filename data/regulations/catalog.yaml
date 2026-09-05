@@ -1,0 +1,16 @@
+records:
+  - id: SYNTH-AI-DEMO
+    regulation: Synthetic-AI-Demo
+    jurisdiction: synthetic
+    title: Demo regulatory source for software testing
+    effective_date: null
+    applicability: synthetic placeholder only
+    source:
+      source_type: synthetic
+      source_id: SYNTH-AI-DEMO
+      source_url: null
+      provision: demo
+      retrieval_date: null
+      validator: engineering-test
+      validation_status: UNVALIDATED
+    notes: Replace with authoritative regulatory records.

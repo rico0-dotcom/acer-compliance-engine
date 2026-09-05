@@ -1,0 +1,10 @@
+{
+  "scenarios": 21,
+  "requirements": 8,
+  "requirement_predictions": 168,
+  "predicted_status_counts": {
+    "PASS": 118,
+    "NOT_APPLICABLE": 26,
+    "FAIL": 24
+  }
+}

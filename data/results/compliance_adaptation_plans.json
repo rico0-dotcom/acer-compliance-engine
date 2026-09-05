@@ -1,0 +1,996 @@
+[
+  {
+    "plan_id": "PLAN-ai-act-benchmark-fail_four_controls_001-EUAI-R9-01",
+    "system_id": "ai-act-benchmark-fail_four_controls_001",
+    "system_version": "1.0",
+    "requirement_id": "EUAI-R9-01",
+    "requirement_title": "Risk management system",
+    "regulation": "Regulation (EU) 2024/1689",
+    "provision": "Article 9(1)-(2)",
+    "violation": {
+      "status": "FAIL",
+      "explanation": "Required component 'risk_management' is absent.",
+      "evidence": [
+        {
+          "type": "architecture",
+          "description": "No risk_management component found.",
+          "source": null,
+          "confidence": 1.0
+        }
+      ],
+      "trace_id": "ai-act-benchmark-fail_four_controls_001-192b1f3d793aad8f"
+    },
+    "candidate_adaptations": [
+      {
+        "action_id": "ADD_RISK_REVIEW_CYCLE",
+        "title": "Add continuous risk review and update cycle",
+        "objective": "support lifecycle risk management",
+        "impact": 2,
+        "priority_score": 0.333
+      },
+      {
+        "action_id": "ADD_RISK_MANAGEMENT_SYSTEM",
+        "title": "Add documented risk-management system",
+        "objective": "establish and maintain risk management",
+        "impact": 3,
+        "priority_score": 0.25
+      }
+    ],
+    "selection_policy": "rank lower-impact actions first, with explanation keyword boosts; require verification before application",
+    "execution_status": "PROPOSED_NOT_APPLIED",
+    "human_intervention_required": true,
+    "verification_required_after_adaptation": true
+  },
+  {
+    "plan_id": "PLAN-ai-act-benchmark-fail_four_controls_001-EUAI-R13-01",
+    "system_id": "ai-act-benchmark-fail_four_controls_001",
+    "system_version": "1.0",
+    "requirement_id": "EUAI-R13-01",
+    "requirement_title": "Transparency and interpretability for deployers",
+    "regulation": "Regulation (EU) 2024/1689",
+    "provision": "Article 13(1)",
+    "violation": {
+      "status": "FAIL",
+      "explanation": "Required component 'transparency_mechanism' is absent.",
+      "evidence": [
+        {
+          "type": "architecture",
+          "description": "No transparency_mechanism component found.",
+          "source": null,
+          "confidence": 1.0
+        }
+      ],
+      "trace_id": "ai-act-benchmark-fail_four_controls_001-192b1f3d793aad8f"
+    },
+    "candidate_adaptations": [
+      {
+        "action_id": "ADD_OUTPUT_INTERPRETATION_SUPPORT",
+        "title": "Add output interpretation support",
+        "objective": "support appropriate understanding of system output",
+        "impact": 2,
+        "priority_score": 0.333
+      },
+      {
+        "action_id": "ADD_TRANSPARENCY_INFORMATION",
+        "title": "Add required transparency information",
+        "objective": "make system operation understandable to deployers/users",
+        "impact": 2,
+        "priority_score": 0.333
+      }
+    ],
+    "selection_policy": "rank lower-impact actions first, with explanation keyword boosts; require verification before application",
+    "execution_status": "PROPOSED_NOT_APPLIED",
+    "human_intervention_required": true,
+    "verification_required_after_adaptation": true
+  },
+  {
+    "plan_id": "PLAN-ai-act-benchmark-fail_four_controls_001-EUAI-R14-01",
+    "system_id": "ai-act-benchmark-fail_four_controls_001",
+    "system_version": "1.0",
+    "requirement_id": "EUAI-R14-01",
+    "requirement_title": "Effective human oversight",
+    "regulation": "Regulation (EU) 2024/1689",
+    "provision": "Article 14(1)-(4)",
+    "violation": {
+      "status": "FAIL",
+      "explanation": "Required component 'human_review' is absent.",
+      "evidence": [
+        {
+          "type": "architecture",
+          "description": "No human_review component found.",
+          "source": null,
+          "confidence": 1.0
+        }
+      ],
+      "trace_id": "ai-act-benchmark-fail_four_controls_001-192b1f3d793aad8f"
+    },
+    "candidate_adaptations": [
+      {
+        "action_id": "ADD_OVERSIGHT_MONITORING",
+        "title": "Add monitoring and bias-awareness support for overseers",
+        "objective": "support effective oversight",
+        "impact": 2,
+        "priority_score": 0.333
+      },
+      {
+        "action_id": "ADD_HUMAN_OVERSIGHT_CONTROL",
+        "title": "Add effective human oversight control",
+        "objective": "enable human oversight during operation",
+        "impact": 3,
+        "priority_score": 0.25
+      }
+    ],
+    "selection_policy": "rank lower-impact actions first, with explanation keyword boosts; require verification before application",
+    "execution_status": "PROPOSED_NOT_APPLIED",
+    "human_intervention_required": true,
+    "verification_required_after_adaptation": true
+  },
+  {
+    "plan_id": "PLAN-ai-act-benchmark-fail_four_controls_001-EUAI-R14-02",
+    "system_id": "ai-act-benchmark-fail_four_controls_001",
+    "system_version": "1.0",
+    "requirement_id": "EUAI-R14-02",
+    "requirement_title": "Override and interruption capability",
+    "regulation": "Regulation (EU) 2024/1689",
+    "provision": "Article 14(4)(d)-(e)",
+    "violation": {
+      "status": "FAIL",
+      "explanation": "Required architectural flow is absent.",
+      "evidence": [
+        {
+          "type": "dataflow",
+          "description": "No required flow found.",
+          "source": null,
+          "confidence": 1.0
+        }
+      ],
+      "trace_id": "ai-act-benchmark-fail_four_controls_001-192b1f3d793aad8f"
+    },
+    "candidate_adaptations": [
+      {
+        "action_id": "ADD_OVERRIDE_CONTROL",
+        "title": "Add human reject/override control",
+        "objective": "allow overseer intervention on outputs",
+        "impact": 2,
+        "priority_score": 0.333
+      },
+      {
+        "action_id": "ADD_SAFE_STOP_CONTROL",
+        "title": "Add safe-stop/interruption control",
+        "objective": "allow system operation to be interrupted safely",
+        "impact": 3,
+        "priority_score": 0.25
+      }
+    ],
+    "selection_policy": "rank lower-impact actions first, with explanation keyword boosts; require verification before application",
+    "execution_status": "PROPOSED_NOT_APPLIED",
+    "human_intervention_required": true,
+    "verification_required_after_adaptation": true
+  },
+  {
+    "plan_id": "PLAN-ai-act-benchmark-fail_four_controls_001-EUAI-R15-01",
+    "system_id": "ai-act-benchmark-fail_four_controls_001",
+    "system_version": "1.0",
+    "requirement_id": "EUAI-R15-01",
+    "requirement_title": "Accuracy, robustness and cybersecurity",
+    "regulation": "Regulation (EU) 2024/1689",
+    "provision": "Article 15(1)",
+    "violation": {
+      "status": "FAIL",
+      "explanation": "Required component 'performance_monitoring' is absent.",
+      "evidence": [
+        {
+          "type": "architecture",
+          "description": "No performance_monitoring component found.",
+          "source": null,
+          "confidence": 1.0
+        }
+      ],
+      "trace_id": "ai-act-benchmark-fail_four_controls_001-192b1f3d793aad8f"
+    },
+    "candidate_adaptations": [
+      {
+        "action_id": "ADD_ACCURACY_ROBUSTNESS_CONTROLS",
+        "title": "Add accuracy and robustness controls",
+        "objective": "improve documented technical performance",
+        "impact": 3,
+        "priority_score": 0.25
+      },
+      {
+        "action_id": "ADD_CYBERSECURITY_CONTROLS",
+        "title": "Add cybersecurity controls",
+        "objective": "address relevant cybersecurity risks",
+        "impact": 3,
+        "priority_score": 0.25
+      }
+    ],
+    "selection_policy": "rank lower-impact actions first, with explanation keyword boosts; require verification before application",
+    "execution_status": "PROPOSED_NOT_APPLIED",
+    "human_intervention_required": true,
+    "verification_required_after_adaptation": true
+  },
+  {
+    "plan_id": "PLAN-ai-act-benchmark-fail_r10_001-EUAI-R10-01",
+    "system_id": "ai-act-benchmark-fail_r10_001",
+    "system_version": "1.0",
+    "requirement_id": "EUAI-R10-01",
+    "requirement_title": "Data governance and management practices",
+    "regulation": "Regulation (EU) 2024/1689",
+    "provision": "Article 10(1)-(2)",
+    "violation": {
+      "status": "FAIL",
+      "explanation": "Required component 'data_governance' is absent.",
+      "evidence": [
+        {
+          "type": "architecture",
+          "description": "No data_governance component found.",
+          "source": null,
+          "confidence": 1.0
+        }
+      ],
+      "trace_id": "ai-act-benchmark-fail_r10_001-80a32097f495229d"
+    },
+    "candidate_adaptations": [
+      {
+        "action_id": "ADD_DATA_DOCUMENTATION",
+        "title": "Add data provenance and documentation controls",
+        "objective": "make data practices demonstrable",
+        "impact": 2,
+        "priority_score": 0.333
+      },
+      {
+        "action_id": "ADD_DATA_GOVERNANCE_CONTROLS",
+        "title": "Add data governance and quality controls",
+        "objective": "govern training/validation/test data",
+        "impact": 3,
+        "priority_score": 0.25
+      }
+    ],
+    "selection_policy": "rank lower-impact actions first, with explanation keyword boosts; require verification before application",
+    "execution_status": "PROPOSED_NOT_APPLIED",
+    "human_intervention_required": true,
+    "verification_required_after_adaptation": true
+  },
+  {
+    "plan_id": "PLAN-ai-act-benchmark-fail_r12_001-EUAI-R12-01",
+    "system_id": "ai-act-benchmark-fail_r12_001",
+    "system_version": "1.0",
+    "requirement_id": "EUAI-R12-01",
+    "requirement_title": "Automatic event logging",
+    "regulation": "Regulation (EU) 2024/1689",
+    "provision": "Article 12(1)-(2)",
+    "violation": {
+      "status": "FAIL",
+      "explanation": "Required configuration property is missing or incorrect.",
+      "evidence": [
+        {
+          "type": "configuration",
+          "description": "No final_decision has logging_enabled=True.",
+          "source": null,
+          "confidence": 1.0
+        }
+      ],
+      "trace_id": "ai-act-benchmark-fail_r12_001-9b37f5dd3f85bc12"
+    },
+    "candidate_adaptations": [
+      {
+        "action_id": "ADD_AUTOMATIC_EVENT_LOGGING",
+        "title": "Add automatic event logging",
+        "objective": "record relevant system events",
+        "impact": 2,
+        "priority_score": 0.333
+      },
+      {
+        "action_id": "ADD_LOG_RETENTION_CONTROL",
+        "title": "Add retention and access controls for logs",
+        "objective": "preserve usable audit evidence",
+        "impact": 2,
+        "priority_score": 0.333
+      }
+    ],
+    "selection_policy": "rank lower-impact actions first, with explanation keyword boosts; require verification before application",
+    "execution_status": "PROPOSED_NOT_APPLIED",
+    "human_intervention_required": true,
+    "verification_required_after_adaptation": true
+  },
+  {
+    "plan_id": "PLAN-ai-act-benchmark-fail_r12_r13_001-EUAI-R12-01",
+    "system_id": "ai-act-benchmark-fail_r12_r13_001",
+    "system_version": "1.0",
+    "requirement_id": "EUAI-R12-01",
+    "requirement_title": "Automatic event logging",
+    "regulation": "Regulation (EU) 2024/1689",
+    "provision": "Article 12(1)-(2)",
+    "violation": {
+      "status": "FAIL",
+      "explanation": "Required configuration property is missing or incorrect.",
+      "evidence": [
+        {
+          "type": "configuration",
+          "description": "No final_decision has logging_enabled=True.",
+          "source": null,
+          "confidence": 1.0
+        }
+      ],
+      "trace_id": "ai-act-benchmark-fail_r12_r13_001-de2266d29258b97e"
+    },
+    "candidate_adaptations": [
+      {
+        "action_id": "ADD_AUTOMATIC_EVENT_LOGGING",
+        "title": "Add automatic event logging",
+        "objective": "record relevant system events",
+        "impact": 2,
+        "priority_score": 0.333
+      },
+      {
+        "action_id": "ADD_LOG_RETENTION_CONTROL",
+        "title": "Add retention and access controls for logs",
+        "objective": "preserve usable audit evidence",
+        "impact": 2,
+        "priority_score": 0.333
+      }
+    ],
+    "selection_policy": "rank lower-impact actions first, with explanation keyword boosts; require verification before application",
+    "execution_status": "PROPOSED_NOT_APPLIED",
+    "human_intervention_required": true,
+    "verification_required_after_adaptation": true
+  },
+  {
+    "plan_id": "PLAN-ai-act-benchmark-fail_r12_r13_001-EUAI-R13-01",
+    "system_id": "ai-act-benchmark-fail_r12_r13_001",
+    "system_version": "1.0",
+    "requirement_id": "EUAI-R13-01",
+    "requirement_title": "Transparency and interpretability for deployers",
+    "regulation": "Regulation (EU) 2024/1689",
+    "provision": "Article 13(1)",
+    "violation": {
+      "status": "FAIL",
+      "explanation": "Required component 'transparency_mechanism' is absent.",
+      "evidence": [
+        {
+          "type": "architecture",
+          "description": "No transparency_mechanism component found.",
+          "source": null,
+          "confidence": 1.0
+        }
+      ],
+      "trace_id": "ai-act-benchmark-fail_r12_r13_001-de2266d29258b97e"
+    },
+    "candidate_adaptations": [
+      {
+        "action_id": "ADD_OUTPUT_INTERPRETATION_SUPPORT",
+        "title": "Add output interpretation support",
+        "objective": "support appropriate understanding of system output",
+        "impact": 2,
+        "priority_score": 0.333
+      },
+      {
+        "action_id": "ADD_TRANSPARENCY_INFORMATION",
+        "title": "Add required transparency information",
+        "objective": "make system operation understandable to deployers/users",
+        "impact": 2,
+        "priority_score": 0.333
+      }
+    ],
+    "selection_policy": "rank lower-impact actions first, with explanation keyword boosts; require verification before application",
+    "execution_status": "PROPOSED_NOT_APPLIED",
+    "human_intervention_required": true,
+    "verification_required_after_adaptation": true
+  },
+  {
+    "plan_id": "PLAN-ai-act-benchmark-fail_r13_001-EUAI-R13-01",
+    "system_id": "ai-act-benchmark-fail_r13_001",
+    "system_version": "1.0",
+    "requirement_id": "EUAI-R13-01",
+    "requirement_title": "Transparency and interpretability for deployers",
+    "regulation": "Regulation (EU) 2024/1689",
+    "provision": "Article 13(1)",
+    "violation": {
+      "status": "FAIL",
+      "explanation": "Required component 'transparency_mechanism' is absent.",
+      "evidence": [
+        {
+          "type": "architecture",
+          "description": "No transparency_mechanism component found.",
+          "source": null,
+          "confidence": 1.0
+        }
+      ],
+      "trace_id": "ai-act-benchmark-fail_r13_001-d3541d86653a6d73"
+    },
+    "candidate_adaptations": [
+      {
+        "action_id": "ADD_OUTPUT_INTERPRETATION_SUPPORT",
+        "title": "Add output interpretation support",
+        "objective": "support appropriate understanding of system output",
+        "impact": 2,
+        "priority_score": 0.333
+      },
+      {
+        "action_id": "ADD_TRANSPARENCY_INFORMATION",
+        "title": "Add required transparency information",
+        "objective": "make system operation understandable to deployers/users",
+        "impact": 2,
+        "priority_score": 0.333
+      }
+    ],
+    "selection_policy": "rank lower-impact actions first, with explanation keyword boosts; require verification before application",
+    "execution_status": "PROPOSED_NOT_APPLIED",
+    "human_intervention_required": true,
+    "verification_required_after_adaptation": true
+  },
+  {
+    "plan_id": "PLAN-ai-act-benchmark-fail_r14_001-EUAI-R14-01",
+    "system_id": "ai-act-benchmark-fail_r14_001",
+    "system_version": "1.0",
+    "requirement_id": "EUAI-R14-01",
+    "requirement_title": "Effective human oversight",
+    "regulation": "Regulation (EU) 2024/1689",
+    "provision": "Article 14(1)-(4)",
+    "violation": {
+      "status": "FAIL",
+      "explanation": "Required component 'human_review' is absent.",
+      "evidence": [
+        {
+          "type": "architecture",
+          "description": "No human_review component found.",
+          "source": null,
+          "confidence": 1.0
+        }
+      ],
+      "trace_id": "ai-act-benchmark-fail_r14_001-6c97f6dd8cd6b466"
+    },
+    "candidate_adaptations": [
+      {
+        "action_id": "ADD_OVERSIGHT_MONITORING",
+        "title": "Add monitoring and bias-awareness support for overseers",
+        "objective": "support effective oversight",
+        "impact": 2,
+        "priority_score": 0.333
+      },
+      {
+        "action_id": "ADD_HUMAN_OVERSIGHT_CONTROL",
+        "title": "Add effective human oversight control",
+        "objective": "enable human oversight during operation",
+        "impact": 3,
+        "priority_score": 0.25
+      }
+    ],
+    "selection_policy": "rank lower-impact actions first, with explanation keyword boosts; require verification before application",
+    "execution_status": "PROPOSED_NOT_APPLIED",
+    "human_intervention_required": true,
+    "verification_required_after_adaptation": true
+  },
+  {
+    "plan_id": "PLAN-ai-act-benchmark-fail_r14_001-EUAI-R14-02",
+    "system_id": "ai-act-benchmark-fail_r14_001",
+    "system_version": "1.0",
+    "requirement_id": "EUAI-R14-02",
+    "requirement_title": "Override and interruption capability",
+    "regulation": "Regulation (EU) 2024/1689",
+    "provision": "Article 14(4)(d)-(e)",
+    "violation": {
+      "status": "FAIL",
+      "explanation": "Required architectural flow is absent.",
+      "evidence": [
+        {
+          "type": "dataflow",
+          "description": "No required flow found.",
+          "source": null,
+          "confidence": 1.0
+        }
+      ],
+      "trace_id": "ai-act-benchmark-fail_r14_001-6c97f6dd8cd6b466"
+    },
+    "candidate_adaptations": [
+      {
+        "action_id": "ADD_OVERRIDE_CONTROL",
+        "title": "Add human reject/override control",
+        "objective": "allow overseer intervention on outputs",
+        "impact": 2,
+        "priority_score": 0.333
+      },
+      {
+        "action_id": "ADD_SAFE_STOP_CONTROL",
+        "title": "Add safe-stop/interruption control",
+        "objective": "allow system operation to be interrupted safely",
+        "impact": 3,
+        "priority_score": 0.25
+      }
+    ],
+    "selection_policy": "rank lower-impact actions first, with explanation keyword boosts; require verification before application",
+    "execution_status": "PROPOSED_NOT_APPLIED",
+    "human_intervention_required": true,
+    "verification_required_after_adaptation": true
+  },
+  {
+    "plan_id": "PLAN-ai-act-benchmark-fail_r14_002-EUAI-R14-02",
+    "system_id": "ai-act-benchmark-fail_r14_002",
+    "system_version": "1.0",
+    "requirement_id": "EUAI-R14-02",
+    "requirement_title": "Override and interruption capability",
+    "regulation": "Regulation (EU) 2024/1689",
+    "provision": "Article 14(4)(d)-(e)",
+    "violation": {
+      "status": "FAIL",
+      "explanation": "Required architectural flow is absent.",
+      "evidence": [
+        {
+          "type": "dataflow",
+          "description": "No required flow found.",
+          "source": null,
+          "confidence": 1.0
+        }
+      ],
+      "trace_id": "ai-act-benchmark-fail_r14_002-6d542e2794e2d68b"
+    },
+    "candidate_adaptations": [
+      {
+        "action_id": "ADD_OVERRIDE_CONTROL",
+        "title": "Add human reject/override control",
+        "objective": "allow overseer intervention on outputs",
+        "impact": 2,
+        "priority_score": 0.333
+      },
+      {
+        "action_id": "ADD_SAFE_STOP_CONTROL",
+        "title": "Add safe-stop/interruption control",
+        "objective": "allow system operation to be interrupted safely",
+        "impact": 3,
+        "priority_score": 0.25
+      }
+    ],
+    "selection_policy": "rank lower-impact actions first, with explanation keyword boosts; require verification before application",
+    "execution_status": "PROPOSED_NOT_APPLIED",
+    "human_intervention_required": true,
+    "verification_required_after_adaptation": true
+  },
+  {
+    "plan_id": "PLAN-ai-act-benchmark-fail_r14_pair_001-EUAI-R14-01",
+    "system_id": "ai-act-benchmark-fail_r14_pair_001",
+    "system_version": "1.0",
+    "requirement_id": "EUAI-R14-01",
+    "requirement_title": "Effective human oversight",
+    "regulation": "Regulation (EU) 2024/1689",
+    "provision": "Article 14(1)-(4)",
+    "violation": {
+      "status": "FAIL",
+      "explanation": "Required component 'human_review' is absent.",
+      "evidence": [
+        {
+          "type": "architecture",
+          "description": "No human_review component found.",
+          "source": null,
+          "confidence": 1.0
+        }
+      ],
+      "trace_id": "ai-act-benchmark-fail_r14_pair_001-eed5d83f42cdcbf3"
+    },
+    "candidate_adaptations": [
+      {
+        "action_id": "ADD_OVERSIGHT_MONITORING",
+        "title": "Add monitoring and bias-awareness support for overseers",
+        "objective": "support effective oversight",
+        "impact": 2,
+        "priority_score": 0.333
+      },
+      {
+        "action_id": "ADD_HUMAN_OVERSIGHT_CONTROL",
+        "title": "Add effective human oversight control",
+        "objective": "enable human oversight during operation",
+        "impact": 3,
+        "priority_score": 0.25
+      }
+    ],
+    "selection_policy": "rank lower-impact actions first, with explanation keyword boosts; require verification before application",
+    "execution_status": "PROPOSED_NOT_APPLIED",
+    "human_intervention_required": true,
+    "verification_required_after_adaptation": true
+  },
+  {
+    "plan_id": "PLAN-ai-act-benchmark-fail_r14_pair_001-EUAI-R14-02",
+    "system_id": "ai-act-benchmark-fail_r14_pair_001",
+    "system_version": "1.0",
+    "requirement_id": "EUAI-R14-02",
+    "requirement_title": "Override and interruption capability",
+    "regulation": "Regulation (EU) 2024/1689",
+    "provision": "Article 14(4)(d)-(e)",
+    "violation": {
+      "status": "FAIL",
+      "explanation": "Required architectural flow is absent.",
+      "evidence": [
+        {
+          "type": "dataflow",
+          "description": "No required flow found.",
+          "source": null,
+          "confidence": 1.0
+        }
+      ],
+      "trace_id": "ai-act-benchmark-fail_r14_pair_001-eed5d83f42cdcbf3"
+    },
+    "candidate_adaptations": [
+      {
+        "action_id": "ADD_OVERRIDE_CONTROL",
+        "title": "Add human reject/override control",
+        "objective": "allow overseer intervention on outputs",
+        "impact": 2,
+        "priority_score": 0.333
+      },
+      {
+        "action_id": "ADD_SAFE_STOP_CONTROL",
+        "title": "Add safe-stop/interruption control",
+        "objective": "allow system operation to be interrupted safely",
+        "impact": 3,
+        "priority_score": 0.25
+      }
+    ],
+    "selection_policy": "rank lower-impact actions first, with explanation keyword boosts; require verification before application",
+    "execution_status": "PROPOSED_NOT_APPLIED",
+    "human_intervention_required": true,
+    "verification_required_after_adaptation": true
+  },
+  {
+    "plan_id": "PLAN-ai-act-benchmark-fail_r15_001-EUAI-R15-01",
+    "system_id": "ai-act-benchmark-fail_r15_001",
+    "system_version": "1.0",
+    "requirement_id": "EUAI-R15-01",
+    "requirement_title": "Accuracy, robustness and cybersecurity",
+    "regulation": "Regulation (EU) 2024/1689",
+    "provision": "Article 15(1)",
+    "violation": {
+      "status": "FAIL",
+      "explanation": "Required component 'performance_monitoring' is absent.",
+      "evidence": [
+        {
+          "type": "architecture",
+          "description": "No performance_monitoring component found.",
+          "source": null,
+          "confidence": 1.0
+        }
+      ],
+      "trace_id": "ai-act-benchmark-fail_r15_001-a3a36a2eae00affc"
+    },
+    "candidate_adaptations": [
+      {
+        "action_id": "ADD_ACCURACY_ROBUSTNESS_CONTROLS",
+        "title": "Add accuracy and robustness controls",
+        "objective": "improve documented technical performance",
+        "impact": 3,
+        "priority_score": 0.25
+      },
+      {
+        "action_id": "ADD_CYBERSECURITY_CONTROLS",
+        "title": "Add cybersecurity controls",
+        "objective": "address relevant cybersecurity risks",
+        "impact": 3,
+        "priority_score": 0.25
+      }
+    ],
+    "selection_policy": "rank lower-impact actions first, with explanation keyword boosts; require verification before application",
+    "execution_status": "PROPOSED_NOT_APPLIED",
+    "human_intervention_required": true,
+    "verification_required_after_adaptation": true
+  },
+  {
+    "plan_id": "PLAN-ai-act-benchmark-fail_r15_r50_001-EUAI-R15-01",
+    "system_id": "ai-act-benchmark-fail_r15_r50_001",
+    "system_version": "1.0",
+    "requirement_id": "EUAI-R15-01",
+    "requirement_title": "Accuracy, robustness and cybersecurity",
+    "regulation": "Regulation (EU) 2024/1689",
+    "provision": "Article 15(1)",
+    "violation": {
+      "status": "FAIL",
+      "explanation": "Required component 'performance_monitoring' is absent.",
+      "evidence": [
+        {
+          "type": "architecture",
+          "description": "No performance_monitoring component found.",
+          "source": null,
+          "confidence": 1.0
+        }
+      ],
+      "trace_id": "ai-act-benchmark-fail_r15_r50_001-ede4ba8d4addb341"
+    },
+    "candidate_adaptations": [
+      {
+        "action_id": "ADD_ACCURACY_ROBUSTNESS_CONTROLS",
+        "title": "Add accuracy and robustness controls",
+        "objective": "improve documented technical performance",
+        "impact": 3,
+        "priority_score": 0.25
+      },
+      {
+        "action_id": "ADD_CYBERSECURITY_CONTROLS",
+        "title": "Add cybersecurity controls",
+        "objective": "address relevant cybersecurity risks",
+        "impact": 3,
+        "priority_score": 0.25
+      }
+    ],
+    "selection_policy": "rank lower-impact actions first, with explanation keyword boosts; require verification before application",
+    "execution_status": "PROPOSED_NOT_APPLIED",
+    "human_intervention_required": true,
+    "verification_required_after_adaptation": true
+  },
+  {
+    "plan_id": "PLAN-ai-act-benchmark-fail_r15_r50_001-EUAI-R50-01",
+    "system_id": "ai-act-benchmark-fail_r15_r50_001",
+    "system_version": "1.0",
+    "requirement_id": "EUAI-R50-01",
+    "requirement_title": "Inform people when they directly interact with AI",
+    "regulation": "Regulation (EU) 2024/1689",
+    "provision": "Article 50(1)",
+    "violation": {
+      "status": "FAIL",
+      "explanation": "System attribute transparency_notice is not True.",
+      "evidence": [
+        {
+          "type": "system_attribute",
+          "description": "Observed transparency_notice=False.",
+          "source": null,
+          "confidence": 1.0
+        }
+      ],
+      "trace_id": "ai-act-benchmark-fail_r15_r50_001-ede4ba8d4addb341"
+    },
+    "candidate_adaptations": [
+      {
+        "action_id": "ADD_AI_INTERACTION_NOTICE",
+        "title": "Add direct-AI-interaction notice",
+        "objective": "inform people when they interact directly with AI",
+        "impact": 1,
+        "priority_score": 0.5
+      }
+    ],
+    "selection_policy": "rank lower-impact actions first, with explanation keyword boosts; require verification before application",
+    "execution_status": "PROPOSED_NOT_APPLIED",
+    "human_intervention_required": true,
+    "verification_required_after_adaptation": true
+  },
+  {
+    "plan_id": "PLAN-ai-act-benchmark-fail_r50_001-EUAI-R50-01",
+    "system_id": "ai-act-benchmark-fail_r50_001",
+    "system_version": "1.0",
+    "requirement_id": "EUAI-R50-01",
+    "requirement_title": "Inform people when they directly interact with AI",
+    "regulation": "Regulation (EU) 2024/1689",
+    "provision": "Article 50(1)",
+    "violation": {
+      "status": "FAIL",
+      "explanation": "System attribute transparency_notice is not True.",
+      "evidence": [
+        {
+          "type": "system_attribute",
+          "description": "Observed transparency_notice=False.",
+          "source": null,
+          "confidence": 1.0
+        }
+      ],
+      "trace_id": "ai-act-benchmark-fail_r50_001-92dd7fc8ae78c3e3"
+    },
+    "candidate_adaptations": [
+      {
+        "action_id": "ADD_AI_INTERACTION_NOTICE",
+        "title": "Add direct-AI-interaction notice",
+        "objective": "inform people when they interact directly with AI",
+        "impact": 1,
+        "priority_score": 0.5
+      }
+    ],
+    "selection_policy": "rank lower-impact actions first, with explanation keyword boosts; require verification before application",
+    "execution_status": "PROPOSED_NOT_APPLIED",
+    "human_intervention_required": true,
+    "verification_required_after_adaptation": true
+  },
+  {
+    "plan_id": "PLAN-ai-act-benchmark-fail_r9_001-EUAI-R9-01",
+    "system_id": "ai-act-benchmark-fail_r9_001",
+    "system_version": "1.0",
+    "requirement_id": "EUAI-R9-01",
+    "requirement_title": "Risk management system",
+    "regulation": "Regulation (EU) 2024/1689",
+    "provision": "Article 9(1)-(2)",
+    "violation": {
+      "status": "FAIL",
+      "explanation": "Required component 'risk_management' is absent.",
+      "evidence": [
+        {
+          "type": "architecture",
+          "description": "No risk_management component found.",
+          "source": null,
+          "confidence": 1.0
+        }
+      ],
+      "trace_id": "ai-act-benchmark-fail_r9_001-d38f27b2e1e69ed1"
+    },
+    "candidate_adaptations": [
+      {
+        "action_id": "ADD_RISK_REVIEW_CYCLE",
+        "title": "Add continuous risk review and update cycle",
+        "objective": "support lifecycle risk management",
+        "impact": 2,
+        "priority_score": 0.333
+      },
+      {
+        "action_id": "ADD_RISK_MANAGEMENT_SYSTEM",
+        "title": "Add documented risk-management system",
+        "objective": "establish and maintain risk management",
+        "impact": 3,
+        "priority_score": 0.25
+      }
+    ],
+    "selection_policy": "rank lower-impact actions first, with explanation keyword boosts; require verification before application",
+    "execution_status": "PROPOSED_NOT_APPLIED",
+    "human_intervention_required": true,
+    "verification_required_after_adaptation": true
+  },
+  {
+    "plan_id": "PLAN-ai-act-benchmark-fail_r9_r10_001-EUAI-R9-01",
+    "system_id": "ai-act-benchmark-fail_r9_r10_001",
+    "system_version": "1.0",
+    "requirement_id": "EUAI-R9-01",
+    "requirement_title": "Risk management system",
+    "regulation": "Regulation (EU) 2024/1689",
+    "provision": "Article 9(1)-(2)",
+    "violation": {
+      "status": "FAIL",
+      "explanation": "Required component 'risk_management' is absent.",
+      "evidence": [
+        {
+          "type": "architecture",
+          "description": "No risk_management component found.",
+          "source": null,
+          "confidence": 1.0
+        }
+      ],
+      "trace_id": "ai-act-benchmark-fail_r9_r10_001-fca0862c1058938b"
+    },
+    "candidate_adaptations": [
+      {
+        "action_id": "ADD_RISK_REVIEW_CYCLE",
+        "title": "Add continuous risk review and update cycle",
+        "objective": "support lifecycle risk management",
+        "impact": 2,
+        "priority_score": 0.333
+      },
+      {
+        "action_id": "ADD_RISK_MANAGEMENT_SYSTEM",
+        "title": "Add documented risk-management system",
+        "objective": "establish and maintain risk management",
+        "impact": 3,
+        "priority_score": 0.25
+      }
+    ],
+    "selection_policy": "rank lower-impact actions first, with explanation keyword boosts; require verification before application",
+    "execution_status": "PROPOSED_NOT_APPLIED",
+    "human_intervention_required": true,
+    "verification_required_after_adaptation": true
+  },
+  {
+    "plan_id": "PLAN-ai-act-benchmark-fail_r9_r10_001-EUAI-R10-01",
+    "system_id": "ai-act-benchmark-fail_r9_r10_001",
+    "system_version": "1.0",
+    "requirement_id": "EUAI-R10-01",
+    "requirement_title": "Data governance and management practices",
+    "regulation": "Regulation (EU) 2024/1689",
+    "provision": "Article 10(1)-(2)",
+    "violation": {
+      "status": "FAIL",
+      "explanation": "Required component 'data_governance' is absent.",
+      "evidence": [
+        {
+          "type": "architecture",
+          "description": "No data_governance component found.",
+          "source": null,
+          "confidence": 1.0
+        }
+      ],
+      "trace_id": "ai-act-benchmark-fail_r9_r10_001-fca0862c1058938b"
+    },
+    "candidate_adaptations": [
+      {
+        "action_id": "ADD_DATA_DOCUMENTATION",
+        "title": "Add data provenance and documentation controls",
+        "objective": "make data practices demonstrable",
+        "impact": 2,
+        "priority_score": 0.333
+      },
+      {
+        "action_id": "ADD_DATA_GOVERNANCE_CONTROLS",
+        "title": "Add data governance and quality controls",
+        "objective": "govern training/validation/test data",
+        "impact": 3,
+        "priority_score": 0.25
+      }
+    ],
+    "selection_policy": "rank lower-impact actions first, with explanation keyword boosts; require verification before application",
+    "execution_status": "PROPOSED_NOT_APPLIED",
+    "human_intervention_required": true,
+    "verification_required_after_adaptation": true
+  },
+  {
+    "plan_id": "PLAN-ai-act-benchmark-na_r10_001-EUAI-R9-01",
+    "system_id": "ai-act-benchmark-na_r10_001",
+    "system_version": "1.0",
+    "requirement_id": "EUAI-R9-01",
+    "requirement_title": "Risk management system",
+    "regulation": "Regulation (EU) 2024/1689",
+    "provision": "Article 9(1)-(2)",
+    "violation": {
+      "status": "FAIL",
+      "explanation": "Required component 'risk_management' is absent.",
+      "evidence": [
+        {
+          "type": "architecture",
+          "description": "No risk_management component found.",
+          "source": null,
+          "confidence": 1.0
+        }
+      ],
+      "trace_id": "ai-act-benchmark-na_r10_001-de037d60fe76ac60"
+    },
+    "candidate_adaptations": [
+      {
+        "action_id": "ADD_RISK_REVIEW_CYCLE",
+        "title": "Add continuous risk review and update cycle",
+        "objective": "support lifecycle risk management",
+        "impact": 2,
+        "priority_score": 0.333
+      },
+      {
+        "action_id": "ADD_RISK_MANAGEMENT_SYSTEM",
+        "title": "Add documented risk-management system",
+        "objective": "establish and maintain risk management",
+        "impact": 3,
+        "priority_score": 0.25
+      }
+    ],
+    "selection_policy": "rank lower-impact actions first, with explanation keyword boosts; require verification before application",
+    "execution_status": "PROPOSED_NOT_APPLIED",
+    "human_intervention_required": true,
+    "verification_required_after_adaptation": true
+  },
+  {
+    "plan_id": "PLAN-ai-act-benchmark-na_r50_001-EUAI-R12-01",
+    "system_id": "ai-act-benchmark-na_r50_001",
+    "system_version": "1.0",
+    "requirement_id": "EUAI-R12-01",
+    "requirement_title": "Automatic event logging",
+    "regulation": "Regulation (EU) 2024/1689",
+    "provision": "Article 12(1)-(2)",
+    "violation": {
+      "status": "FAIL",
+      "explanation": "Required configuration property is missing or incorrect.",
+      "evidence": [
+        {
+          "type": "configuration",
+          "description": "No final_decision has logging_enabled=True.",
+          "source": null,
+          "confidence": 1.0
+        }
+      ],
+      "trace_id": "ai-act-benchmark-na_r50_001-9459e901a1b5fc65"
+    },
+    "candidate_adaptations": [
+      {
+        "action_id": "ADD_AUTOMATIC_EVENT_LOGGING",
+        "title": "Add automatic event logging",
+        "objective": "record relevant system events",
+        "impact": 2,
+        "priority_score": 0.333
+      },
+      {
+        "action_id": "ADD_LOG_RETENTION_CONTROL",
+        "title": "Add retention and access controls for logs",
+        "objective": "preserve usable audit evidence",
+        "impact": 2,
+        "priority_score": 0.333
+      }
+    ],
+    "selection_policy": "rank lower-impact actions first, with explanation keyword boosts; require verification before application",
+    "execution_status": "PROPOSED_NOT_APPLIED",
+    "human_intervention_required": true,
+    "verification_required_after_adaptation": true
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "method": "controlled ablation using identical 21-system benchmark, 8 requirements, adaptation catalog, and deterministic assessor",
+  "strategies": {
+    "FIXED_ORDER": {
+      "strategy": "FIXED_ORDER",
+      "systems": 21,
+      "violations_before": 24,
+      "violations_after": 0,
+      "violation_reduction_rate": 1.0,
+      "systems_compliant_after": 21,
+      "system_compliance_rate_after": 1.0,
+      "accepted_adaptation_steps": 24,
+      "mean_steps_per_system": 1.142857,
+      "total_cost": 0,
+      "mean_cost_per_system": 0,
+      "total_complexity": 0,
+      "mean_complexity_per_system": 0,
+      "new_failures_total": 0
+    },
+    "CHEAPEST_GREEDY": {
+      "strategy": "CHEAPEST_GREEDY",
+      "systems": 21,
+      "violations_before": 24,
+      "violations_after": 0,
+      "violation_reduction_rate": 1.0,
+      "systems_compliant_after": 21,
+      "system_compliance_rate_after": 1.0,
+      "accepted_adaptation_steps": 24,
+      "mean_steps_per_system": 1.142857,
+      "total_cost": 0,
+      "mean_cost_per_system": 0,
+      "total_complexity": 0,
+      "mean_complexity_per_system": 0,
+      "new_failures_total": 0
+    },
+    "AGENTIC": {
+      "strategy": "AGENTIC",
+      "systems": 21,
+      "violations_before": 24,
+      "violations_after": 0,
+      "violation_reduction_rate": 1.0,
+      "systems_compliant_after": 21,
+      "system_compliance_rate_after": 1.0,
+      "accepted_adaptation_steps": 42,
+      "mean_steps_per_system": 2,
+      "total_cost": 41,
+      "mean_cost_per_system": 1.952381,
+      "total_complexity": 25,
+      "mean_complexity_per_system": 1.190476,
+      "new_failures_total": 0
+    }
+  },
+  "interpretation_guardrail": "This compares search/selection policies over the same encoded adaptation tactics; it does not establish legal compliance or prove superiority on unseen systems."
+}

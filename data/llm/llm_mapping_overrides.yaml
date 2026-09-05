@@ -1,0 +1,11 @@
+# Optional reviewer overrides for candidate -> ACER-family mapping.
+#
+# Example:
+# overrides:
+#   LLM-R14-07:
+#     matched_requirement_id: EUAI-R14-02
+#     relation: PARTIAL_MATCH
+#     reason: "Article 14(4)(d) is one limb of the ACER intervention-path requirement."
+#
+# Leave this file empty until a reviewer needs to override an automatic suggestion.
+overrides: {}

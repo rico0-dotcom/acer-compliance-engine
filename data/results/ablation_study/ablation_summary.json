@@ -1,0 +1,176 @@
+{
+  "method": "component attribution ablation over completed three-seed ACER experiments",
+  "seeds": [
+    20260904,
+    20260905,
+    20260906
+  ],
+  "systems_per_seed": 100,
+  "total_systems": 300,
+  "conditions": {
+    "FIXED_ORDER": {
+      "description": "Baseline fixed-order remediation policy.",
+      "steps": [
+        421,
+        422,
+        421
+      ],
+      "cost": [
+        816,
+        819,
+        808
+      ],
+      "complexity": [
+        496,
+        493,
+        490
+      ]
+    },
+    "AGENTIC_NO_LLM": {
+      "description": "Deterministic multi-objective agentic adaptation without external LLM assistance.",
+      "steps": [
+        298,
+        295,
+        293
+      ],
+      "cost": [
+        746,
+        735,
+        729
+      ],
+      "complexity": [
+        596,
+        590,
+        586
+      ]
+    },
+    "AGENTIC_LLM": {
+      "description": "Agentic adaptation with GPT-oss proposal assistance and deterministic post-verification.",
+      "steps": [
+        376,
+        378,
+        377
+      ],
+      "cost": [
+        726.0,
+        731.0,
+        720.0
+      ],
+      "complexity": [
+        451.0,
+        449.0,
+        446.0
+      ],
+      "llm_calls": [
+        376,
+        378,
+        377
+      ],
+      "llm_failures": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "ablations": {
+    "agentic_selection_contribution": {
+      "comparison": "AGENTIC_NO_LLM_vs_FIXED_ORDER",
+      "steps": {
+        "n": 3,
+        "mean_difference": -126,
+        "population_sd_difference": 2.160246899469287,
+        "mean_absolute_difference": 126,
+        "direction_counts": {
+          "a_greater": 0,
+          "equal": 0,
+          "b_greater": 3
+        }
+      },
+      "cost": {
+        "n": 3,
+        "mean_difference": -77.66666666666667,
+        "population_sd_difference": 5.792715732327589,
+        "mean_absolute_difference": 77.66666666666667,
+        "direction_counts": {
+          "a_greater": 0,
+          "equal": 0,
+          "b_greater": 3
+        }
+      },
+      "complexity": {
+        "n": 3,
+        "mean_difference": 97.66666666666667,
+        "population_sd_difference": 1.699673171197595,
+        "mean_absolute_difference": 97.66666666666667,
+        "direction_counts": {
+          "a_greater": 3,
+          "equal": 0,
+          "b_greater": 0
+        }
+      },
+      "mean_relative_change": {
+        "steps": -0.29905063291139244,
+        "cost": -0.09537453950061409,
+        "complexity": 0.19810682893847187
+      }
+    },
+    "llm_assistance_contribution": {
+      "comparison": "AGENTIC_LLM_vs_AGENTIC_NO_LLM",
+      "steps": {
+        "n": 3,
+        "mean_difference": 81.66666666666667,
+        "population_sd_difference": 2.6246692913372702,
+        "mean_absolute_difference": 81.66666666666667,
+        "direction_counts": {
+          "a_greater": 3,
+          "equal": 0,
+          "b_greater": 0
+        }
+      },
+      "cost": {
+        "n": 3,
+        "mean_difference": -11.0,
+        "population_sd_difference": 6.683312551921141,
+        "mean_absolute_difference": 11.0,
+        "direction_counts": {
+          "a_greater": 0,
+          "equal": 0,
+          "b_greater": 3
+        }
+      },
+      "complexity": {
+        "n": 3,
+        "mean_difference": -142.0,
+        "population_sd_difference": 2.160246899469287,
+        "mean_absolute_difference": 142.0,
+        "direction_counts": {
+          "a_greater": 0,
+          "equal": 0,
+          "b_greater": 3
+        }
+      },
+      "mean_relative_change": {
+        "steps": 0.2765237020316028,
+        "cost": -0.01493212669683258,
+        "complexity": -0.24040632054176064
+      }
+    }
+  },
+  "compliance_control": {
+    "all_conditions_share_deterministic_assessment": true,
+    "llm_failures_by_seed": [
+      0,
+      0,
+      0
+    ]
+  },
+  "limitations": [
+    "This ablation uses the completed three-seed randomized experiments; no new LLM calls are made.",
+    "Only the implemented components are ablated: adaptation selection policy and LLM assistance.",
+    "A pure LLM-only compliance oracle was not evaluated and therefore is not claimed to be a valid ablation.",
+    "Modeled cost and complexity are benchmark quantities rather than measured real-world engineering cost or complexity.",
+    "Three seeds support descriptive attribution but not statistical significance claims.",
+    "The benchmark is synthetic and does not establish legal compliance or superiority on unseen systems."
+  ]
+}

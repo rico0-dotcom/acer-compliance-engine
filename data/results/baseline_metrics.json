@@ -1,0 +1,10 @@
+{
+  "accuracy": 1.0,
+  "precision_pass": 1.0,
+  "recall_pass": 1.0,
+  "f1_pass": 1.0,
+  "false_positive": 0,
+  "false_negative": 0,
+  "n": 150,
+  "tn": 74
+}

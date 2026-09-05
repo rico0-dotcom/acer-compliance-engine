@@ -1,0 +1,103 @@
+tactics:
+  - id: ADD_RISK_MANAGEMENT
+    name: Add risk management component
+    addresses_requirements: [EUAI-R9-01]
+    compliance_gain: 1.0
+    cost: 1.0
+    disruption: 0.3
+    risk: 0.1
+    action:
+      type: add_component
+      id: risk_management
+      component_type: risk_management
+      properties: {continuous: true}
+
+  - id: ADD_DATA_GOVERNANCE
+    name: Add data governance component
+    addresses_requirements: [EUAI-R10-01]
+    compliance_gain: 1.0
+    cost: 0.8
+    disruption: 0.2
+    risk: 0.1
+    action:
+      type: add_component
+      id: data_governance
+      component_type: data_governance
+      properties: {quality_controls: true}
+
+  - id: ENABLE_DECISION_LOGGING
+    name: Enable automatic event logging
+    addresses_requirements: [EUAI-R12-01]
+    compliance_gain: 1.0
+    cost: 0.2
+    disruption: 0.1
+    risk: 0.0
+    action:
+      type: set_property
+      component_id: final_decision
+      property: logging_enabled
+      value: true
+
+  - id: ENABLE_TRANSPARENCY_MECHANISM
+    name: Add transparency mechanism
+    addresses_requirements: [EUAI-R13-01]
+    compliance_gain: 1.0
+    cost: 0.5
+    disruption: 0.1
+    risk: 0.0
+    action:
+      type: add_component
+      id: transparency_mechanism
+      component_type: transparency_mechanism
+      properties: {interpretability_information: true}
+
+  - id: ADD_HUMAN_REVIEW
+    name: Add human oversight
+    addresses_requirements: [EUAI-R14-01]
+    compliance_gain: 1.0
+    cost: 1.0
+    disruption: 0.5
+    risk: 0.1
+    action:
+      type: add_component
+      id: human_review
+      component_type: human_review
+      properties: {can_override: true, can_stop: true}
+
+  - id: CONNECT_HUMAN_REVIEW
+    name: Connect human intervention to final decision
+    addresses_requirements: [EUAI-R14-02]
+    compliance_gain: 1.0
+    cost: 0.5
+    disruption: 0.4
+    risk: 0.1
+    action:
+      type: add_flow
+      source: human_review
+      target: final_decision
+      data: candidate_data
+
+  - id: ADD_PERFORMANCE_MONITORING
+    name: Add performance monitoring
+    addresses_requirements: [EUAI-R15-01]
+    compliance_gain: 1.0
+    cost: 0.7
+    disruption: 0.2
+    risk: 0.1
+    action:
+      type: add_component
+      id: performance_monitoring
+      component_type: performance_monitoring
+      properties: {accuracy_monitored: true, robustness_monitored: true}
+
+  - id: ENABLE_TRANSPARENCY_NOTICE
+    name: Add AI interaction notice
+    addresses_requirements: [EUAI-R50-01]
+    compliance_gain: 1.0
+    cost: 0.1
+    disruption: 0.0
+    risk: 0.0
+    action:
+      type: set_attribute
+      attribute: transparency_notice
+      value: true

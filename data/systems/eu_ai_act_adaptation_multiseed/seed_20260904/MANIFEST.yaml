@@ -1,0 +1,744 @@
+benchmark: ACER randomized adaptation interaction stress benchmark
+systems: 100
+seed: 20260904
+requirements:
+- EUAI-R9-01
+- EUAI-R10-01
+- EUAI-R12-01
+- EUAI-R13-01
+- EUAI-R14-01
+- EUAI-R14-02
+- EUAI-R15-01
+- EUAI-R50-01
+expected_total_initial_failures: 421
+scenarios:
+- scenario_id: ai-act-random-stress-001
+  failing_requirements:
+  - EUAI-R13-01
+  - EUAI-R50-01
+  initial_failure_count: 2
+- scenario_id: ai-act-random-stress-002
+  failing_requirements:
+  - EUAI-R14-01
+  - EUAI-R14-02
+  initial_failure_count: 2
+- scenario_id: ai-act-random-stress-003
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R10-01
+  initial_failure_count: 2
+- scenario_id: ai-act-random-stress-004
+  failing_requirements:
+  - EUAI-R12-01
+  - EUAI-R15-01
+  initial_failure_count: 2
+- scenario_id: ai-act-random-stress-005
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R10-01
+  - EUAI-R13-01
+  - EUAI-R50-01
+  initial_failure_count: 4
+- scenario_id: ai-act-random-stress-006
+  failing_requirements:
+  - EUAI-R13-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R50-01
+  initial_failure_count: 4
+- scenario_id: ai-act-random-stress-007
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R10-01
+  - EUAI-R12-01
+  - EUAI-R15-01
+  initial_failure_count: 4
+- scenario_id: ai-act-random-stress-008
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R10-01
+  - EUAI-R12-01
+  - EUAI-R13-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  - EUAI-R50-01
+  initial_failure_count: 8
+- scenario_id: ai-act-random-stress-009
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R13-01
+  - EUAI-R50-01
+  initial_failure_count: 3
+- scenario_id: ai-act-random-stress-010
+  failing_requirements:
+  - EUAI-R12-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  initial_failure_count: 3
+- scenario_id: ai-act-random-stress-011
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R15-01
+  - EUAI-R50-01
+  initial_failure_count: 3
+- scenario_id: ai-act-random-stress-012
+  failing_requirements:
+  - EUAI-R10-01
+  - EUAI-R12-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  initial_failure_count: 4
+- scenario_id: ai-act-random-stress-013
+  failing_requirements:
+  - EUAI-R10-01
+  - EUAI-R13-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  initial_failure_count: 4
+- scenario_id: ai-act-random-stress-014
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R10-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  initial_failure_count: 4
+- scenario_id: ai-act-random-stress-015
+  failing_requirements:
+  - EUAI-R10-01
+  - EUAI-R12-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  initial_failure_count: 4
+- scenario_id: ai-act-random-stress-016
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R10-01
+  - EUAI-R13-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R50-01
+  initial_failure_count: 6
+- scenario_id: ai-act-random-stress-017
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R13-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  - EUAI-R50-01
+  initial_failure_count: 6
+- scenario_id: ai-act-random-stress-018
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R10-01
+  - EUAI-R12-01
+  - EUAI-R13-01
+  - EUAI-R15-01
+  initial_failure_count: 5
+- scenario_id: ai-act-random-stress-019
+  failing_requirements:
+  - EUAI-R12-01
+  - EUAI-R13-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  initial_failure_count: 5
+- scenario_id: ai-act-random-stress-020
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  initial_failure_count: 3
+- scenario_id: ai-act-random-stress-021
+  failing_requirements:
+  - EUAI-R12-01
+  - EUAI-R14-02
+  initial_failure_count: 2
+- scenario_id: ai-act-random-stress-022
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R10-01
+  - EUAI-R13-01
+  - EUAI-R14-02
+  initial_failure_count: 4
+- scenario_id: ai-act-random-stress-023
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R10-01
+  - EUAI-R12-01
+  - EUAI-R13-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  initial_failure_count: 6
+- scenario_id: ai-act-random-stress-024
+  failing_requirements:
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  initial_failure_count: 3
+- scenario_id: ai-act-random-stress-025
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R14-02
+  initial_failure_count: 2
+- scenario_id: ai-act-random-stress-026
+  failing_requirements:
+  - EUAI-R12-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  initial_failure_count: 3
+- scenario_id: ai-act-random-stress-027
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R12-01
+  - EUAI-R13-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  initial_failure_count: 5
+- scenario_id: ai-act-random-stress-028
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R12-01
+  - EUAI-R13-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R50-01
+  initial_failure_count: 6
+- scenario_id: ai-act-random-stress-029
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R10-01
+  - EUAI-R12-01
+  - EUAI-R14-02
+  initial_failure_count: 4
+- scenario_id: ai-act-random-stress-030
+  failing_requirements:
+  - EUAI-R12-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R50-01
+  initial_failure_count: 4
+- scenario_id: ai-act-random-stress-031
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R13-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R50-01
+  initial_failure_count: 5
+- scenario_id: ai-act-random-stress-032
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R13-01
+  - EUAI-R15-01
+  initial_failure_count: 3
+- scenario_id: ai-act-random-stress-033
+  failing_requirements:
+  - EUAI-R10-01
+  - EUAI-R12-01
+  - EUAI-R15-01
+  initial_failure_count: 3
+- scenario_id: ai-act-random-stress-034
+  failing_requirements:
+  - EUAI-R10-01
+  - EUAI-R12-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R50-01
+  initial_failure_count: 5
+- scenario_id: ai-act-random-stress-035
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R13-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  initial_failure_count: 4
+- scenario_id: ai-act-random-stress-036
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  initial_failure_count: 3
+- scenario_id: ai-act-random-stress-037
+  failing_requirements:
+  - EUAI-R10-01
+  - EUAI-R12-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  - EUAI-R50-01
+  initial_failure_count: 5
+- scenario_id: ai-act-random-stress-038
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R50-01
+  initial_failure_count: 2
+- scenario_id: ai-act-random-stress-039
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R12-01
+  - EUAI-R13-01
+  initial_failure_count: 3
+- scenario_id: ai-act-random-stress-040
+  failing_requirements:
+  - EUAI-R12-01
+  - EUAI-R13-01
+  - EUAI-R14-02
+  initial_failure_count: 3
+- scenario_id: ai-act-random-stress-041
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R12-01
+  - EUAI-R13-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  initial_failure_count: 5
+- scenario_id: ai-act-random-stress-042
+  failing_requirements:
+  - EUAI-R13-01
+  - EUAI-R14-02
+  - EUAI-R50-01
+  initial_failure_count: 3
+- scenario_id: ai-act-random-stress-043
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R12-01
+  - EUAI-R14-02
+  initial_failure_count: 3
+- scenario_id: ai-act-random-stress-044
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R13-01
+  - EUAI-R15-01
+  - EUAI-R50-01
+  initial_failure_count: 4
+- scenario_id: ai-act-random-stress-045
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R10-01
+  - EUAI-R12-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R50-01
+  initial_failure_count: 6
+- scenario_id: ai-act-random-stress-046
+  failing_requirements:
+  - EUAI-R10-01
+  - EUAI-R13-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  - EUAI-R50-01
+  initial_failure_count: 6
+- scenario_id: ai-act-random-stress-047
+  failing_requirements:
+  - EUAI-R10-01
+  - EUAI-R13-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  initial_failure_count: 4
+- scenario_id: ai-act-random-stress-048
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R13-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  initial_failure_count: 4
+- scenario_id: ai-act-random-stress-049
+  failing_requirements:
+  - EUAI-R10-01
+  - EUAI-R12-01
+  - EUAI-R13-01
+  - EUAI-R15-01
+  initial_failure_count: 4
+- scenario_id: ai-act-random-stress-050
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R10-01
+  - EUAI-R14-02
+  - EUAI-R50-01
+  initial_failure_count: 4
+- scenario_id: ai-act-random-stress-051
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R14-02
+  - EUAI-R50-01
+  initial_failure_count: 3
+- scenario_id: ai-act-random-stress-052
+  failing_requirements:
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R50-01
+  initial_failure_count: 3
+- scenario_id: ai-act-random-stress-053
+  failing_requirements:
+  - EUAI-R14-02
+  - EUAI-R15-01
+  - EUAI-R50-01
+  initial_failure_count: 3
+- scenario_id: ai-act-random-stress-054
+  failing_requirements:
+  - EUAI-R12-01
+  - EUAI-R13-01
+  initial_failure_count: 2
+- scenario_id: ai-act-random-stress-055
+  failing_requirements:
+  - EUAI-R10-01
+  - EUAI-R12-01
+  - EUAI-R13-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R50-01
+  initial_failure_count: 6
+- scenario_id: ai-act-random-stress-056
+  failing_requirements:
+  - EUAI-R12-01
+  - EUAI-R13-01
+  - EUAI-R14-02
+  - EUAI-R50-01
+  initial_failure_count: 4
+- scenario_id: ai-act-random-stress-057
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R10-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  initial_failure_count: 5
+- scenario_id: ai-act-random-stress-058
+  failing_requirements:
+  - EUAI-R10-01
+  - EUAI-R12-01
+  initial_failure_count: 2
+- scenario_id: ai-act-random-stress-059
+  failing_requirements:
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  - EUAI-R50-01
+  initial_failure_count: 4
+- scenario_id: ai-act-random-stress-060
+  failing_requirements:
+  - EUAI-R10-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  - EUAI-R50-01
+  initial_failure_count: 5
+- scenario_id: ai-act-random-stress-061
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R10-01
+  - EUAI-R12-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  - EUAI-R50-01
+  initial_failure_count: 6
+- scenario_id: ai-act-random-stress-062
+  failing_requirements:
+  - EUAI-R10-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  initial_failure_count: 3
+- scenario_id: ai-act-random-stress-063
+  failing_requirements:
+  - EUAI-R10-01
+  - EUAI-R15-01
+  initial_failure_count: 2
+- scenario_id: ai-act-random-stress-064
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  initial_failure_count: 4
+- scenario_id: ai-act-random-stress-065
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R10-01
+  - EUAI-R12-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  initial_failure_count: 6
+- scenario_id: ai-act-random-stress-066
+  failing_requirements:
+  - EUAI-R10-01
+  - EUAI-R12-01
+  - EUAI-R13-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  - EUAI-R50-01
+  initial_failure_count: 7
+- scenario_id: ai-act-random-stress-067
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R12-01
+  - EUAI-R13-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  - EUAI-R50-01
+  initial_failure_count: 7
+- scenario_id: ai-act-random-stress-068
+  failing_requirements:
+  - EUAI-R10-01
+  - EUAI-R12-01
+  - EUAI-R13-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  - EUAI-R50-01
+  initial_failure_count: 6
+- scenario_id: ai-act-random-stress-069
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R10-01
+  - EUAI-R13-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  - EUAI-R50-01
+  initial_failure_count: 7
+- scenario_id: ai-act-random-stress-070
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R10-01
+  - EUAI-R13-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  - EUAI-R50-01
+  initial_failure_count: 6
+- scenario_id: ai-act-random-stress-071
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R12-01
+  - EUAI-R13-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  - EUAI-R50-01
+  initial_failure_count: 6
+- scenario_id: ai-act-random-stress-072
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R10-01
+  - EUAI-R12-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  - EUAI-R50-01
+  initial_failure_count: 7
+- scenario_id: ai-act-random-stress-073
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R10-01
+  - EUAI-R12-01
+  - EUAI-R13-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  initial_failure_count: 7
+- scenario_id: ai-act-random-stress-074
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R10-01
+  - EUAI-R12-01
+  - EUAI-R13-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R50-01
+  initial_failure_count: 7
+- scenario_id: ai-act-random-stress-075
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R10-01
+  - EUAI-R12-01
+  - EUAI-R50-01
+  initial_failure_count: 4
+- scenario_id: ai-act-random-stress-076
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  - EUAI-R50-01
+  initial_failure_count: 5
+- scenario_id: ai-act-random-stress-077
+  failing_requirements:
+  - EUAI-R13-01
+  - EUAI-R14-02
+  initial_failure_count: 2
+- scenario_id: ai-act-random-stress-078
+  failing_requirements:
+  - EUAI-R12-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  - EUAI-R50-01
+  initial_failure_count: 4
+- scenario_id: ai-act-random-stress-079
+  failing_requirements:
+  - EUAI-R15-01
+  - EUAI-R50-01
+  initial_failure_count: 2
+- scenario_id: ai-act-random-stress-080
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R10-01
+  - EUAI-R14-02
+  initial_failure_count: 3
+- scenario_id: ai-act-random-stress-081
+  failing_requirements:
+  - EUAI-R12-01
+  - EUAI-R13-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  initial_failure_count: 4
+- scenario_id: ai-act-random-stress-082
+  failing_requirements:
+  - EUAI-R12-01
+  - EUAI-R15-01
+  - EUAI-R50-01
+  initial_failure_count: 3
+- scenario_id: ai-act-random-stress-083
+  failing_requirements:
+  - EUAI-R10-01
+  - EUAI-R12-01
+  - EUAI-R14-02
+  - EUAI-R50-01
+  initial_failure_count: 4
+- scenario_id: ai-act-random-stress-084
+  failing_requirements:
+  - EUAI-R10-01
+  - EUAI-R12-01
+  - EUAI-R13-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  initial_failure_count: 5
+- scenario_id: ai-act-random-stress-085
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R12-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R50-01
+  initial_failure_count: 5
+- scenario_id: ai-act-random-stress-086
+  failing_requirements:
+  - EUAI-R10-01
+  - EUAI-R13-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  initial_failure_count: 5
+- scenario_id: ai-act-random-stress-087
+  failing_requirements:
+  - EUAI-R10-01
+  - EUAI-R13-01
+  - EUAI-R50-01
+  initial_failure_count: 3
+- scenario_id: ai-act-random-stress-088
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R10-01
+  - EUAI-R13-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  initial_failure_count: 6
+- scenario_id: ai-act-random-stress-089
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R12-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  - EUAI-R50-01
+  initial_failure_count: 6
+- scenario_id: ai-act-random-stress-090
+  failing_requirements:
+  - EUAI-R12-01
+  - EUAI-R13-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  - EUAI-R50-01
+  initial_failure_count: 6
+- scenario_id: ai-act-random-stress-091
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R10-01
+  - EUAI-R13-01
+  - EUAI-R14-02
+  - EUAI-R50-01
+  initial_failure_count: 5
+- scenario_id: ai-act-random-stress-092
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R10-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  - EUAI-R50-01
+  initial_failure_count: 6
+- scenario_id: ai-act-random-stress-093
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R12-01
+  initial_failure_count: 2
+- scenario_id: ai-act-random-stress-094
+  failing_requirements:
+  - EUAI-R10-01
+  - EUAI-R13-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  - EUAI-R50-01
+  initial_failure_count: 5
+- scenario_id: ai-act-random-stress-095
+  failing_requirements:
+  - EUAI-R10-01
+  - EUAI-R50-01
+  initial_failure_count: 2
+- scenario_id: ai-act-random-stress-096
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R12-01
+  - EUAI-R13-01
+  - EUAI-R15-01
+  initial_failure_count: 4
+- scenario_id: ai-act-random-stress-097
+  failing_requirements:
+  - EUAI-R10-01
+  - EUAI-R12-01
+  - EUAI-R14-02
+  initial_failure_count: 3
+- scenario_id: ai-act-random-stress-098
+  failing_requirements:
+  - EUAI-R9-01
+  - EUAI-R10-01
+  - EUAI-R12-01
+  - EUAI-R13-01
+  - EUAI-R15-01
+  - EUAI-R50-01
+  initial_failure_count: 6
+- scenario_id: ai-act-random-stress-099
+  failing_requirements:
+  - EUAI-R12-01
+  - EUAI-R14-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  initial_failure_count: 4
+- scenario_id: ai-act-random-stress-100
+  failing_requirements:
+  - EUAI-R13-01
+  - EUAI-R14-02
+  - EUAI-R15-01
+  initial_failure_count: 3
+design:
+  structured_interaction_cases: 20
+  mixed_random_cases: 60
+  dense_random_cases: 20
+  multi_violation: true
+  bundled_repair_opportunities: true
+  paired_human_oversight_cases: true
+grounding: Same 8 curated ACER requirements and deterministic assessor as the primary
+  benchmark.

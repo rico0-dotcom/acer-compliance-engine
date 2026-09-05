@@ -1,0 +1,11 @@
+system_id,defect,baseline_status,final_status,baseline_violations,final_violations,adaptation_success,adaptation_steps
+ai-act-scenario-001,data_governance,NON_COMPLIANT,COMPLIANT,7,0,True,7
+ai-act-scenario-002,risk_management,NON_COMPLIANT,COMPLIANT,7,0,True,7
+ai-act-scenario-003,human_review,NON_COMPLIANT,COMPLIANT,7,0,True,7
+ai-act-scenario-004,transparency_mechanism,NON_COMPLIANT,COMPLIANT,7,0,True,7
+ai-act-scenario-005,transparency_mechanism,NON_COMPLIANT,COMPLIANT,7,0,True,7
+ai-act-scenario-006,logging,NON_COMPLIANT,COMPLIANT,8,0,True,8
+ai-act-scenario-007,data_governance,NON_COMPLIANT,COMPLIANT,7,0,True,7
+ai-act-scenario-008,clean,NON_COMPLIANT,COMPLIANT,7,0,True,7
+ai-act-scenario-009,data_governance,NON_COMPLIANT,COMPLIANT,7,0,True,7
+ai-act-scenario-010,performance_monitoring,NON_COMPLIANT,COMPLIANT,7,0,True,7

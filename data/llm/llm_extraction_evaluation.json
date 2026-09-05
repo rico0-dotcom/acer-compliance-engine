@@ -1,0 +1,13 @@
+{
+  "providers": [
+    "digitalocean"
+  ],
+  "models": [
+    "openai-gpt-oss-120b"
+  ],
+  "gold_requirements": 8,
+  "llm_candidates": 70,
+  "exact_provision_matches": 3,
+  "title_exact_matches": 0,
+  "note": "Initial automated comparison only; legal meaning, completeness, applicability and provenance require human validation."
+}

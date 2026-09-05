@@ -1,0 +1,59 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "candidate_id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "provision": {
+            "type": "string"
+          },
+          "obligation": {
+            "type": "string"
+          },
+          "actor": {
+            "type": "string"
+          },
+          "applicability": {
+            "type": "string"
+          },
+          "machine_constraint": {
+            "type": "string"
+          },
+          "evidence_expected": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source_quote": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "candidate_id",
+          "title",
+          "provision",
+          "obligation",
+          "actor",
+          "applicability",
+          "machine_constraint",
+          "evidence_expected",
+          "source_quote"
+        ]
+      }
+    }
+  },
+  "required": [
+    "requirements"
+  ]
+}

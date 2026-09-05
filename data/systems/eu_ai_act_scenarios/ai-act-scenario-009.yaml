@@ -1,0 +1,46 @@
+id: ai-act-scenario-009
+name: EU AI Act Recruitment Scenario 009
+domain: recruitment
+version: '1.0'
+components:
+- id: candidate_portal
+  type: user_interface
+  properties: {}
+- id: resume_llm
+  type: generative_ai
+  properties:
+    purpose: resume_information_extraction
+- id: scoring_model
+  type: decision_engine
+  properties: {}
+- id: final_decision
+  type: final_decision
+  properties:
+    logging_enabled: true
+- id: hr_dashboard
+  type: human_interface
+  properties: {}
+data:
+- id: candidate_data
+  classification: personal_data
+flows:
+- source: candidate_portal
+  target: resume_llm
+  data: candidate_data
+- source: resume_llm
+  target: scoring_model
+  data: candidate_data
+- source: scoring_model
+  target: final_decision
+  data: candidate_data
+- source: final_decision
+  target: hr_dashboard
+  data: candidate_data
+attributes:
+  system_is_high_risk: true
+  uses_training_data: true
+  direct_ai_interaction: true
+objectives:
+  compliance: 1.0
+  performance: 0.8
+  cost: 0.7

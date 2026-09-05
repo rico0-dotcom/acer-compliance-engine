@@ -1,0 +1,185 @@
+# ACER benchmark specification
+#
+# This file defines the intended scenario conditions and expected compliance
+# statuses independently of ACER's compliance checker.
+#
+# The generator consumes this specification to construct system models.
+# The expected labels below are therefore benchmark ground truth, not ACER output.
+#
+# Statuses:
+# PASS, FAIL, NOT_APPLICABLE
+#
+# For the first benchmark, each case has a single primary alteration. The
+# generator also creates multi-violation and applicability cases.
+
+cases:
+  - id: clean_001
+    type: clean
+    high_risk: true
+    uses_training_data: true
+    direct_ai_interaction: true
+    missing: []
+    expected_overrides: {}
+
+  - id: clean_002
+    type: clean
+    high_risk: true
+    uses_training_data: true
+    direct_ai_interaction: false
+    missing: []
+    expected_overrides:
+      EUAI-R50-01: NOT_APPLICABLE
+
+  - id: clean_003
+    type: clean
+    high_risk: false
+    uses_training_data: true
+    direct_ai_interaction: true
+    missing: []
+    expected_overrides:
+      EUAI-R9-01: NOT_APPLICABLE
+      EUAI-R10-01: NOT_APPLICABLE
+      EUAI-R12-01: NOT_APPLICABLE
+      EUAI-R13-01: NOT_APPLICABLE
+      EUAI-R14-01: NOT_APPLICABLE
+      EUAI-R14-02: NOT_APPLICABLE
+      EUAI-R15-01: NOT_APPLICABLE
+
+  - id: clean_004
+    type: clean
+    high_risk: true
+    uses_training_data: false
+    direct_ai_interaction: true
+    missing: []
+    expected_overrides:
+      EUAI-R10-01: NOT_APPLICABLE
+
+  - id: clean_005
+    type: clean
+    high_risk: false
+    uses_training_data: false
+    direct_ai_interaction: false
+    missing: []
+    expected_overrides:
+      EUAI-R9-01: NOT_APPLICABLE
+      EUAI-R10-01: NOT_APPLICABLE
+      EUAI-R12-01: NOT_APPLICABLE
+      EUAI-R13-01: NOT_APPLICABLE
+      EUAI-R14-01: NOT_APPLICABLE
+      EUAI-R14-02: NOT_APPLICABLE
+      EUAI-R15-01: NOT_APPLICABLE
+      EUAI-R50-01: NOT_APPLICABLE
+
+  - id: fail_r9_001
+    type: single_violation
+    high_risk: true
+    uses_training_data: true
+    direct_ai_interaction: true
+    missing: [risk_management]
+
+  - id: fail_r10_001
+    type: single_violation
+    high_risk: true
+    uses_training_data: true
+    direct_ai_interaction: true
+    missing: [data_governance]
+
+  - id: fail_r12_001
+    type: single_violation
+    high_risk: true
+    uses_training_data: true
+    direct_ai_interaction: true
+    missing: [logging]
+
+  - id: fail_r13_001
+    type: single_violation
+    high_risk: true
+    uses_training_data: true
+    direct_ai_interaction: true
+    missing: [transparency_mechanism]
+
+  - id: fail_r14_001
+    type: single_violation
+    high_risk: true
+    uses_training_data: true
+    direct_ai_interaction: true
+    missing: [human_review]
+
+  - id: fail_r14_002
+    type: single_violation
+    high_risk: true
+    uses_training_data: true
+    direct_ai_interaction: true
+    missing: [human_intervention_flow]
+
+  - id: fail_r15_001
+    type: single_violation
+    high_risk: true
+    uses_training_data: true
+    direct_ai_interaction: true
+    missing: [performance_monitoring]
+
+  - id: fail_r50_001
+    type: single_violation
+    high_risk: true
+    uses_training_data: true
+    direct_ai_interaction: true
+    missing: [article50_notice]
+
+  - id: fail_r9_r10_001
+    type: multi_violation
+    high_risk: true
+    uses_training_data: true
+    direct_ai_interaction: true
+    missing: [risk_management, data_governance]
+
+  - id: fail_r12_r13_001
+    type: multi_violation
+    high_risk: true
+    uses_training_data: true
+    direct_ai_interaction: true
+    missing: [logging, transparency_mechanism]
+
+  - id: fail_r14_pair_001
+    type: multi_violation
+    high_risk: true
+    uses_training_data: true
+    direct_ai_interaction: true
+    missing: [human_review, human_intervention_flow]
+
+  - id: fail_r15_r50_001
+    type: multi_violation
+    high_risk: true
+    uses_training_data: true
+    direct_ai_interaction: true
+    missing: [performance_monitoring, article50_notice]
+
+  - id: fail_four_controls_001
+    type: multi_violation
+    high_risk: true
+    uses_training_data: true
+    direct_ai_interaction: true
+    missing:
+      [risk_management, transparency_mechanism, human_review, performance_monitoring]
+
+  - id: na_r50_001
+    type: applicability
+    high_risk: true
+    uses_training_data: true
+    direct_ai_interaction: false
+    missing: [logging]
+
+  - id: na_r10_001
+    type: applicability
+    high_risk: true
+    uses_training_data: false
+    direct_ai_interaction: true
+    missing: [risk_management]
+
+  - id: na_high_risk_001
+    type: applicability
+    high_risk: false
+    uses_training_data: true
+    direct_ai_interaction: true
+    missing: [risk_management, data_governance, logging, transparency_mechanism,
+              human_review, human_intervention_flow, performance_monitoring]

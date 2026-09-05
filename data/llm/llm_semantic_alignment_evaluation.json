@@ -1,0 +1,66 @@
+{
+  "candidate_count": 70,
+  "reviewer_count": [
+    "ACER_review_v1"
+  ],
+  "relevance_distribution": {
+    "EXACT_MATCH": 6,
+    "PARTIAL_MATCH": 27,
+    "OTHER": 37
+  },
+  "supported_candidate_rate": 0.471429,
+  "exact_match_rate": 0.085714,
+  "baseline_requirements_in_review": [
+    "EUAI-R10-01",
+    "EUAI-R12-01",
+    "EUAI-R13-01",
+    "EUAI-R14-01",
+    "EUAI-R14-02",
+    "EUAI-R15-01",
+    "EUAI-R50-01",
+    "EUAI-R9-01"
+  ],
+  "baseline_requirements_covered_in_review": [
+    "EUAI-R10-01",
+    "EUAI-R12-01",
+    "EUAI-R13-01",
+    "EUAI-R14-01",
+    "EUAI-R14-02",
+    "EUAI-R15-01",
+    "EUAI-R50-01",
+    "EUAI-R9-01"
+  ],
+  "baseline_requirement_coverage_rate": 1.0,
+  "normalization_relation_counts": {
+    "FAMILY_MATCH": 63,
+    "OUTSIDE_BASELINE": 7
+  },
+  "normalization_target_requirement_counts": {
+    "EUAI-R9-01": 12,
+    "EUAI-R10-01": 13,
+    "EUAI-R12-01": 6,
+    "EUAI-R13-01": 14,
+    "EUAI-R14-01": 7,
+    "EUAI-R14-02": 2,
+    "EUAI-R15-01": 8,
+    "EUAI-R50-01": 1
+  },
+  "normalization_family_coverage": 8,
+  "normalization_vs_review_family_agreement": {
+    "comparable_candidates": 33,
+    "agreement_count": 33,
+    "agreement_rate": 1.0,
+    "note": "This compares the deterministic family suggestion with the reviewer’s matched_requirement_id. It is not a legal-equivalence measure."
+  },
+  "dimension_scores": {
+    "obligation_exact_rate": 1.0,
+    "obligation_at_least_partial_rate": 1.0,
+    "applicability_exact_rate": 0.971429,
+    "applicability_at_least_partial_rate": 1.0,
+    "machine_constraint_exact_rate": 0.0,
+    "machine_constraint_at_least_partial_rate": 1.0,
+    "provenance_exact_rate": 1.0,
+    "provenance_at_least_partial_rate": 1.0
+  },
+  "method_note": "Single-reviewer semantic evaluation against the current curated ACER reference set. EXACT_MATCH and PARTIAL_MATCH indicate supported alignment to the baseline; OTHER is not a claim of legal error. Normalization is family-level heuristic grouping and does not establish legal equivalence or compliance validity."
+}

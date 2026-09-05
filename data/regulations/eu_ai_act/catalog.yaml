@@ -1,0 +1,31 @@
+records:
+  - id: EU-AI-ACT-2024-1689
+    regulation: Regulation (EU) 2024/1689 (Artificial Intelligence Act)
+    jurisdiction: European Union
+    title: Harmonised rules on artificial intelligence
+    effective_date: "2024-08-01"
+    applicability: Risk-based AI regulation; individual provisions have specific applicability dates and scopes.
+    source:
+      source_type: official_eur_lex
+      source_id: CELEX:32024R1689
+      source_url: https://eur-lex.europa.eu/eli/reg/2024/1689
+      provision: "Regulation text"
+      retrieval_date: "2026-09-03"
+      validator: "ACER corpus curation"
+      validation_status: HUMAN_VALIDATED
+    notes: "Use the current consolidated text when extending the corpus."
+  - id: EU-AI-ACT-ARTICLE-50-GUIDANCE-2026
+    regulation: EU AI Act Article 50 transparency guidance
+    jurisdiction: European Union
+    title: Guidelines on transparency obligations for providers and deployers
+    effective_date: "2026-08-02"
+    applicability: Article 50 transparency obligations.
+    source:
+      source_type: official_european_commission
+      source_id: "AI transparency guidelines"
+      source_url: https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems
+      provision: "Article 50 guidance"
+      retrieval_date: "2026-09-03"
+      validator: "ACER corpus curation"
+      validation_status: HUMAN_VALIDATED
+    notes: "Guidance complements the underlying Regulation and should not replace the legal text."

@@ -1,0 +1,474 @@
+{
+  "execution_status": "SIMULATED_APPROVED_AND_VERIFIED",
+  "failed_checks": 24,
+  "applied_changes": 24,
+  "post_verification": 24,
+  "post_status_counts": {
+    "PASS": 24,
+    "FAIL": 0
+  },
+  "human_approval": "APPROVED_ALL_FOR_PROTOTYPE",
+  "source_models_modified": false,
+  "rollback_required": false,
+  "overlays": [
+    {
+      "system_id": "ai-act-benchmark-fail_four_controls_001",
+      "requirement_id": "EUAI-R9-01",
+      "change_type": "CONTROL_OVERLAY",
+      "action": "Add or strengthen a documented, continuously maintained risk-management control and evidence trail.",
+      "target": null,
+      "postcondition": "Verification must show PASS for EUAI-R9-01 after adaptation.",
+      "approval_required": true,
+      "verification_required": true
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_four_controls_001",
+      "requirement_id": "EUAI-R13-01",
+      "change_type": "CONTROL_OVERLAY",
+      "action": "Add system transparency information and user-facing instructions appropriate to the AI system.",
+      "target": null,
+      "postcondition": "Verification must show PASS for EUAI-R13-01 after adaptation.",
+      "approval_required": true,
+      "verification_required": true
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_four_controls_001",
+      "requirement_id": "EUAI-R14-01",
+      "change_type": "CONTROL_OVERLAY",
+      "action": "Add effective human-oversight controls, including monitoring, understanding, and intervention capability.",
+      "target": null,
+      "postcondition": "Verification must show PASS for EUAI-R14-01 after adaptation.",
+      "approval_required": true,
+      "verification_required": true
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_four_controls_001",
+      "requirement_id": "EUAI-R14-02",
+      "change_type": "CONTROL_OVERLAY",
+      "action": "Add explicit human override/rejection and safe-stop/interruption capability.",
+      "target": null,
+      "postcondition": "Verification must show PASS for EUAI-R14-02 after adaptation.",
+      "approval_required": true,
+      "verification_required": true
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_four_controls_001",
+      "requirement_id": "EUAI-R15-01",
+      "change_type": "CONTROL_OVERLAY",
+      "action": "Add or strengthen accuracy, robustness, and cybersecurity controls with verification evidence.",
+      "target": null,
+      "postcondition": "Verification must show PASS for EUAI-R15-01 after adaptation.",
+      "approval_required": true,
+      "verification_required": true
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r10_001",
+      "requirement_id": "EUAI-R10-01",
+      "change_type": "CONTROL_OVERLAY",
+      "action": "Add or strengthen data-governance controls, including provenance, quality, suitability, and documented management evidence.",
+      "target": null,
+      "postcondition": "Verification must show PASS for EUAI-R10-01 after adaptation.",
+      "approval_required": true,
+      "verification_required": true
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r12_001",
+      "requirement_id": "EUAI-R12-01",
+      "change_type": "CONTROL_OVERLAY",
+      "action": "Enable automatic event logging for relevant events and retain logs as auditable evidence.",
+      "target": null,
+      "postcondition": "Verification must show PASS for EUAI-R12-01 after adaptation.",
+      "approval_required": true,
+      "verification_required": true
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r12_r13_001",
+      "requirement_id": "EUAI-R12-01",
+      "change_type": "CONTROL_OVERLAY",
+      "action": "Enable automatic event logging for relevant events and retain logs as auditable evidence.",
+      "target": null,
+      "postcondition": "Verification must show PASS for EUAI-R12-01 after adaptation.",
+      "approval_required": true,
+      "verification_required": true
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r12_r13_001",
+      "requirement_id": "EUAI-R13-01",
+      "change_type": "CONTROL_OVERLAY",
+      "action": "Add system transparency information and user-facing instructions appropriate to the AI system.",
+      "target": null,
+      "postcondition": "Verification must show PASS for EUAI-R13-01 after adaptation.",
+      "approval_required": true,
+      "verification_required": true
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r13_001",
+      "requirement_id": "EUAI-R13-01",
+      "change_type": "CONTROL_OVERLAY",
+      "action": "Add system transparency information and user-facing instructions appropriate to the AI system.",
+      "target": null,
+      "postcondition": "Verification must show PASS for EUAI-R13-01 after adaptation.",
+      "approval_required": true,
+      "verification_required": true
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r14_001",
+      "requirement_id": "EUAI-R14-01",
+      "change_type": "CONTROL_OVERLAY",
+      "action": "Add effective human-oversight controls, including monitoring, understanding, and intervention capability.",
+      "target": null,
+      "postcondition": "Verification must show PASS for EUAI-R14-01 after adaptation.",
+      "approval_required": true,
+      "verification_required": true
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r14_001",
+      "requirement_id": "EUAI-R14-02",
+      "change_type": "CONTROL_OVERLAY",
+      "action": "Add explicit human override/rejection and safe-stop/interruption capability.",
+      "target": null,
+      "postcondition": "Verification must show PASS for EUAI-R14-02 after adaptation.",
+      "approval_required": true,
+      "verification_required": true
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r14_002",
+      "requirement_id": "EUAI-R14-02",
+      "change_type": "CONTROL_OVERLAY",
+      "action": "Add explicit human override/rejection and safe-stop/interruption capability.",
+      "target": null,
+      "postcondition": "Verification must show PASS for EUAI-R14-02 after adaptation.",
+      "approval_required": true,
+      "verification_required": true
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r14_pair_001",
+      "requirement_id": "EUAI-R14-01",
+      "change_type": "CONTROL_OVERLAY",
+      "action": "Add effective human-oversight controls, including monitoring, understanding, and intervention capability.",
+      "target": null,
+      "postcondition": "Verification must show PASS for EUAI-R14-01 after adaptation.",
+      "approval_required": true,
+      "verification_required": true
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r14_pair_001",
+      "requirement_id": "EUAI-R14-02",
+      "change_type": "CONTROL_OVERLAY",
+      "action": "Add explicit human override/rejection and safe-stop/interruption capability.",
+      "target": null,
+      "postcondition": "Verification must show PASS for EUAI-R14-02 after adaptation.",
+      "approval_required": true,
+      "verification_required": true
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r15_001",
+      "requirement_id": "EUAI-R15-01",
+      "change_type": "CONTROL_OVERLAY",
+      "action": "Add or strengthen accuracy, robustness, and cybersecurity controls with verification evidence.",
+      "target": null,
+      "postcondition": "Verification must show PASS for EUAI-R15-01 after adaptation.",
+      "approval_required": true,
+      "verification_required": true
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r15_r50_001",
+      "requirement_id": "EUAI-R15-01",
+      "change_type": "CONTROL_OVERLAY",
+      "action": "Add or strengthen accuracy, robustness, and cybersecurity controls with verification evidence.",
+      "target": null,
+      "postcondition": "Verification must show PASS for EUAI-R15-01 after adaptation.",
+      "approval_required": true,
+      "verification_required": true
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r15_r50_001",
+      "requirement_id": "EUAI-R50-01",
+      "change_type": "CONTROL_OVERLAY",
+      "action": "Add a direct-AI-interaction disclosure control at the point of interaction.",
+      "target": null,
+      "postcondition": "Verification must show PASS for EUAI-R50-01 after adaptation.",
+      "approval_required": true,
+      "verification_required": true
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r50_001",
+      "requirement_id": "EUAI-R50-01",
+      "change_type": "CONTROL_OVERLAY",
+      "action": "Add a direct-AI-interaction disclosure control at the point of interaction.",
+      "target": null,
+      "postcondition": "Verification must show PASS for EUAI-R50-01 after adaptation.",
+      "approval_required": true,
+      "verification_required": true
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r9_001",
+      "requirement_id": "EUAI-R9-01",
+      "change_type": "CONTROL_OVERLAY",
+      "action": "Add or strengthen a documented, continuously maintained risk-management control and evidence trail.",
+      "target": null,
+      "postcondition": "Verification must show PASS for EUAI-R9-01 after adaptation.",
+      "approval_required": true,
+      "verification_required": true
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r9_r10_001",
+      "requirement_id": "EUAI-R9-01",
+      "change_type": "CONTROL_OVERLAY",
+      "action": "Add or strengthen a documented, continuously maintained risk-management control and evidence trail.",
+      "target": null,
+      "postcondition": "Verification must show PASS for EUAI-R9-01 after adaptation.",
+      "approval_required": true,
+      "verification_required": true
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r9_r10_001",
+      "requirement_id": "EUAI-R10-01",
+      "change_type": "CONTROL_OVERLAY",
+      "action": "Add or strengthen data-governance controls, including provenance, quality, suitability, and documented management evidence.",
+      "target": null,
+      "postcondition": "Verification must show PASS for EUAI-R10-01 after adaptation.",
+      "approval_required": true,
+      "verification_required": true
+    },
+    {
+      "system_id": "ai-act-benchmark-na_r10_001",
+      "requirement_id": "EUAI-R9-01",
+      "change_type": "CONTROL_OVERLAY",
+      "action": "Add or strengthen a documented, continuously maintained risk-management control and evidence trail.",
+      "target": null,
+      "postcondition": "Verification must show PASS for EUAI-R9-01 after adaptation.",
+      "approval_required": true,
+      "verification_required": true
+    },
+    {
+      "system_id": "ai-act-benchmark-na_r50_001",
+      "requirement_id": "EUAI-R12-01",
+      "change_type": "CONTROL_OVERLAY",
+      "action": "Enable automatic event logging for relevant events and retain logs as auditable evidence.",
+      "target": null,
+      "postcondition": "Verification must show PASS for EUAI-R12-01 after adaptation.",
+      "approval_required": true,
+      "verification_required": true
+    }
+  ],
+  "verification": [
+    {
+      "system_id": "ai-act-benchmark-fail_four_controls_001",
+      "requirement_id": "EUAI-R9-01",
+      "baseline_status": "FAIL",
+      "selected_adaptation": "Add or strengthen a documented, continuously maintained risk-management control and evidence trail.",
+      "simulated_post_status": "PASS",
+      "verification_method": "controlled_state_transition",
+      "verification_note": "PASS is a prototype postcondition check on an isolated overlay; it is not evidence that the real system has been remediated."
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_four_controls_001",
+      "requirement_id": "EUAI-R13-01",
+      "baseline_status": "FAIL",
+      "selected_adaptation": "Add system transparency information and user-facing instructions appropriate to the AI system.",
+      "simulated_post_status": "PASS",
+      "verification_method": "controlled_state_transition",
+      "verification_note": "PASS is a prototype postcondition check on an isolated overlay; it is not evidence that the real system has been remediated."
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_four_controls_001",
+      "requirement_id": "EUAI-R14-01",
+      "baseline_status": "FAIL",
+      "selected_adaptation": "Add effective human-oversight controls, including monitoring, understanding, and intervention capability.",
+      "simulated_post_status": "PASS",
+      "verification_method": "controlled_state_transition",
+      "verification_note": "PASS is a prototype postcondition check on an isolated overlay; it is not evidence that the real system has been remediated."
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_four_controls_001",
+      "requirement_id": "EUAI-R14-02",
+      "baseline_status": "FAIL",
+      "selected_adaptation": "Add explicit human override/rejection and safe-stop/interruption capability.",
+      "simulated_post_status": "PASS",
+      "verification_method": "controlled_state_transition",
+      "verification_note": "PASS is a prototype postcondition check on an isolated overlay; it is not evidence that the real system has been remediated."
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_four_controls_001",
+      "requirement_id": "EUAI-R15-01",
+      "baseline_status": "FAIL",
+      "selected_adaptation": "Add or strengthen accuracy, robustness, and cybersecurity controls with verification evidence.",
+      "simulated_post_status": "PASS",
+      "verification_method": "controlled_state_transition",
+      "verification_note": "PASS is a prototype postcondition check on an isolated overlay; it is not evidence that the real system has been remediated."
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r10_001",
+      "requirement_id": "EUAI-R10-01",
+      "baseline_status": "FAIL",
+      "selected_adaptation": "Add or strengthen data-governance controls, including provenance, quality, suitability, and documented management evidence.",
+      "simulated_post_status": "PASS",
+      "verification_method": "controlled_state_transition",
+      "verification_note": "PASS is a prototype postcondition check on an isolated overlay; it is not evidence that the real system has been remediated."
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r12_001",
+      "requirement_id": "EUAI-R12-01",
+      "baseline_status": "FAIL",
+      "selected_adaptation": "Enable automatic event logging for relevant events and retain logs as auditable evidence.",
+      "simulated_post_status": "PASS",
+      "verification_method": "controlled_state_transition",
+      "verification_note": "PASS is a prototype postcondition check on an isolated overlay; it is not evidence that the real system has been remediated."
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r12_r13_001",
+      "requirement_id": "EUAI-R12-01",
+      "baseline_status": "FAIL",
+      "selected_adaptation": "Enable automatic event logging for relevant events and retain logs as auditable evidence.",
+      "simulated_post_status": "PASS",
+      "verification_method": "controlled_state_transition",
+      "verification_note": "PASS is a prototype postcondition check on an isolated overlay; it is not evidence that the real system has been remediated."
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r12_r13_001",
+      "requirement_id": "EUAI-R13-01",
+      "baseline_status": "FAIL",
+      "selected_adaptation": "Add system transparency information and user-facing instructions appropriate to the AI system.",
+      "simulated_post_status": "PASS",
+      "verification_method": "controlled_state_transition",
+      "verification_note": "PASS is a prototype postcondition check on an isolated overlay; it is not evidence that the real system has been remediated."
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r13_001",
+      "requirement_id": "EUAI-R13-01",
+      "baseline_status": "FAIL",
+      "selected_adaptation": "Add system transparency information and user-facing instructions appropriate to the AI system.",
+      "simulated_post_status": "PASS",
+      "verification_method": "controlled_state_transition",
+      "verification_note": "PASS is a prototype postcondition check on an isolated overlay; it is not evidence that the real system has been remediated."
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r14_001",
+      "requirement_id": "EUAI-R14-01",
+      "baseline_status": "FAIL",
+      "selected_adaptation": "Add effective human-oversight controls, including monitoring, understanding, and intervention capability.",
+      "simulated_post_status": "PASS",
+      "verification_method": "controlled_state_transition",
+      "verification_note": "PASS is a prototype postcondition check on an isolated overlay; it is not evidence that the real system has been remediated."
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r14_001",
+      "requirement_id": "EUAI-R14-02",
+      "baseline_status": "FAIL",
+      "selected_adaptation": "Add explicit human override/rejection and safe-stop/interruption capability.",
+      "simulated_post_status": "PASS",
+      "verification_method": "controlled_state_transition",
+      "verification_note": "PASS is a prototype postcondition check on an isolated overlay; it is not evidence that the real system has been remediated."
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r14_002",
+      "requirement_id": "EUAI-R14-02",
+      "baseline_status": "FAIL",
+      "selected_adaptation": "Add explicit human override/rejection and safe-stop/interruption capability.",
+      "simulated_post_status": "PASS",
+      "verification_method": "controlled_state_transition",
+      "verification_note": "PASS is a prototype postcondition check on an isolated overlay; it is not evidence that the real system has been remediated."
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r14_pair_001",
+      "requirement_id": "EUAI-R14-01",
+      "baseline_status": "FAIL",
+      "selected_adaptation": "Add effective human-oversight controls, including monitoring, understanding, and intervention capability.",
+      "simulated_post_status": "PASS",
+      "verification_method": "controlled_state_transition",
+      "verification_note": "PASS is a prototype postcondition check on an isolated overlay; it is not evidence that the real system has been remediated."
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r14_pair_001",
+      "requirement_id": "EUAI-R14-02",
+      "baseline_status": "FAIL",
+      "selected_adaptation": "Add explicit human override/rejection and safe-stop/interruption capability.",
+      "simulated_post_status": "PASS",
+      "verification_method": "controlled_state_transition",
+      "verification_note": "PASS is a prototype postcondition check on an isolated overlay; it is not evidence that the real system has been remediated."
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r15_001",
+      "requirement_id": "EUAI-R15-01",
+      "baseline_status": "FAIL",
+      "selected_adaptation": "Add or strengthen accuracy, robustness, and cybersecurity controls with verification evidence.",
+      "simulated_post_status": "PASS",
+      "verification_method": "controlled_state_transition",
+      "verification_note": "PASS is a prototype postcondition check on an isolated overlay; it is not evidence that the real system has been remediated."
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r15_r50_001",
+      "requirement_id": "EUAI-R15-01",
+      "baseline_status": "FAIL",
+      "selected_adaptation": "Add or strengthen accuracy, robustness, and cybersecurity controls with verification evidence.",
+      "simulated_post_status": "PASS",
+      "verification_method": "controlled_state_transition",
+      "verification_note": "PASS is a prototype postcondition check on an isolated overlay; it is not evidence that the real system has been remediated."
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r15_r50_001",
+      "requirement_id": "EUAI-R50-01",
+      "baseline_status": "FAIL",
+      "selected_adaptation": "Add a direct-AI-interaction disclosure control at the point of interaction.",
+      "simulated_post_status": "PASS",
+      "verification_method": "controlled_state_transition",
+      "verification_note": "PASS is a prototype postcondition check on an isolated overlay; it is not evidence that the real system has been remediated."
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r50_001",
+      "requirement_id": "EUAI-R50-01",
+      "baseline_status": "FAIL",
+      "selected_adaptation": "Add a direct-AI-interaction disclosure control at the point of interaction.",
+      "simulated_post_status": "PASS",
+      "verification_method": "controlled_state_transition",
+      "verification_note": "PASS is a prototype postcondition check on an isolated overlay; it is not evidence that the real system has been remediated."
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r9_001",
+      "requirement_id": "EUAI-R9-01",
+      "baseline_status": "FAIL",
+      "selected_adaptation": "Add or strengthen a documented, continuously maintained risk-management control and evidence trail.",
+      "simulated_post_status": "PASS",
+      "verification_method": "controlled_state_transition",
+      "verification_note": "PASS is a prototype postcondition check on an isolated overlay; it is not evidence that the real system has been remediated."
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r9_r10_001",
+      "requirement_id": "EUAI-R9-01",
+      "baseline_status": "FAIL",
+      "selected_adaptation": "Add or strengthen a documented, continuously maintained risk-management control and evidence trail.",
+      "simulated_post_status": "PASS",
+      "verification_method": "controlled_state_transition",
+      "verification_note": "PASS is a prototype postcondition check on an isolated overlay; it is not evidence that the real system has been remediated."
+    },
+    {
+      "system_id": "ai-act-benchmark-fail_r9_r10_001",
+      "requirement_id": "EUAI-R10-01",
+      "baseline_status": "FAIL",
+      "selected_adaptation": "Add or strengthen data-governance controls, including provenance, quality, suitability, and documented management evidence.",
+      "simulated_post_status": "PASS",
+      "verification_method": "controlled_state_transition",
+      "verification_note": "PASS is a prototype postcondition check on an isolated overlay; it is not evidence that the real system has been remediated."
+    },
+    {
+      "system_id": "ai-act-benchmark-na_r10_001",
+      "requirement_id": "EUAI-R9-01",
+      "baseline_status": "FAIL",
+      "selected_adaptation": "Add or strengthen a documented, continuously maintained risk-management control and evidence trail.",
+      "simulated_post_status": "PASS",
+      "verification_method": "controlled_state_transition",
+      "verification_note": "PASS is a prototype postcondition check on an isolated overlay; it is not evidence that the real system has been remediated."
+    },
+    {
+      "system_id": "ai-act-benchmark-na_r50_001",
+      "requirement_id": "EUAI-R12-01",
+      "baseline_status": "FAIL",
+      "selected_adaptation": "Enable automatic event logging for relevant events and retain logs as auditable evidence.",
+      "simulated_post_status": "PASS",
+      "verification_method": "controlled_state_transition",
+      "verification_note": "PASS is a prototype postcondition check on an isolated overlay; it is not evidence that the real system has been remediated."
+    }
+  ],
+  "method_note": "This is a controlled execution prototype using isolated control overlays. A simulated PASS is not evidence of real-world remediation or legal compliance; production execution must mutate a system model, rerun the deterministic assessor, and retain/rollback based on actual verification results."
+}

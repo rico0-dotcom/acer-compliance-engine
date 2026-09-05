@@ -1,0 +1,17 @@
+{
+  "method": "LLM-assisted candidate generation with deterministic model-level evaluation and selection",
+  "provider": "digitalocean",
+  "model": "openai-gpt-oss-120b",
+  "systems": 100,
+  "total_violations_before": 422,
+  "total_violations_after": 0,
+  "violations_reduced": 422,
+  "systems_compliant_after": 100,
+  "total_llm_calls": 378,
+  "total_llm_failures": 0,
+  "source_models_persistently_modified": false,
+  "llm_role": "propose/rank executable candidate action IDs only",
+  "verification_role": "deterministic ACER assessor decides PASS/FAIL after each isolated model mutation",
+  "safety_boundary": "LLM cannot directly mutate system models and cannot declare compliance",
+  "method_note": "Research prototype. LLM proposals are constrained to the safe adaptation catalog; all executable changes occur on isolated deep copies and require deterministic post-adaptation verification."
+}

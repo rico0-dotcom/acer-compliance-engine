@@ -1,0 +1,93 @@
+{
+  "method": "paired descriptive statistical evaluation over saved multi-seed ACER results",
+  "seeds": [
+    20260904,
+    20260905,
+    20260906
+  ],
+  "systems_per_seed": 100,
+  "total_systems": 300,
+  "AGENTIC_vs_FIXED_ORDER": {
+    "steps": {
+      "n": 3,
+      "mean_difference": -126,
+      "median_difference": -127,
+      "population_sd_difference": 2.160246899469287,
+      "mean_absolute_difference": 126,
+      "direction_counts": {
+        "a_greater": 0,
+        "equal": 0,
+        "b_greater": 3
+      }
+    },
+    "cost": {
+      "n": 3,
+      "mean_difference": -77.66666666666667,
+      "median_difference": -79,
+      "population_sd_difference": 5.792715732327589,
+      "mean_absolute_difference": 77.66666666666667,
+      "direction_counts": {
+        "a_greater": 0,
+        "equal": 0,
+        "b_greater": 3
+      }
+    },
+    "complexity": {
+      "n": 3,
+      "mean_difference": 97.66666666666667,
+      "median_difference": 97,
+      "population_sd_difference": 1.699673171197595,
+      "mean_absolute_difference": 97.66666666666667,
+      "direction_counts": {
+        "a_greater": 3,
+        "equal": 0,
+        "b_greater": 0
+      }
+    },
+    "mean_step_change_rate": -0.29905063291139244,
+    "mean_cost_change_rate": -0.09537453950061409,
+    "mean_complexity_change_rate": 0.19810682893847187
+  },
+  "seed_values": {
+    "FIXED_ORDER": {
+      "steps": [
+        421,
+        422,
+        421
+      ],
+      "cost": [
+        816,
+        819,
+        808
+      ],
+      "complexity": [
+        496,
+        493,
+        490
+      ]
+    },
+    "AGENTIC": {
+      "steps": [
+        298,
+        295,
+        293
+      ],
+      "cost": [
+        746,
+        735,
+        729
+      ],
+      "complexity": [
+        596,
+        590,
+        586
+      ]
+    }
+  },
+  "guardrails": [
+    "Descriptive paired analysis over three seeds; no statistical significance claim is made.",
+    "Modeled cost and complexity are benchmark quantities, not measured real-world engineering cost or complexity.",
+    "All compliance outcomes remain determined by the deterministic ACER assessor.",
+    "Synthetic benchmark evidence does not establish legal compliance or superiority on unseen systems."
+  ]
+}

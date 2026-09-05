@@ -1,0 +1,60 @@
+{
+  "method": "multi-objective interaction stress benchmark using identical 8 requirements and deterministic assessor",
+  "benchmark_systems": 100,
+  "strategies": {
+    "FIXED_ORDER": {
+      "strategy": "FIXED_ORDER",
+      "systems": 100,
+      "violations_before": 421,
+      "violations_after": 0,
+      "violation_reduction_rate": 1.0,
+      "systems_compliant_after": 100,
+      "system_compliance_rate_after": 1.0,
+      "accepted_adaptation_steps": 421,
+      "mean_steps_per_system": 4.21,
+      "total_cost": 816,
+      "mean_cost_per_system": 8.16,
+      "total_complexity": 496,
+      "mean_complexity_per_system": 4.96,
+      "new_failures_total": 0
+    },
+    "CHEAPEST_GREEDY": {
+      "strategy": "CHEAPEST_GREEDY",
+      "systems": 100,
+      "violations_before": 421,
+      "violations_after": 0,
+      "violation_reduction_rate": 1.0,
+      "systems_compliant_after": 100,
+      "system_compliance_rate_after": 1.0,
+      "accepted_adaptation_steps": 421,
+      "mean_steps_per_system": 4.21,
+      "total_cost": 816,
+      "mean_cost_per_system": 8.16,
+      "total_complexity": 496,
+      "mean_complexity_per_system": 4.96,
+      "new_failures_total": 0
+    },
+    "AGENTIC": {
+      "strategy": "AGENTIC",
+      "systems": 100,
+      "violations_before": 421,
+      "violations_after": 0,
+      "violation_reduction_rate": 1.0,
+      "systems_compliant_after": 100,
+      "system_compliance_rate_after": 1.0,
+      "accepted_adaptation_steps": 298,
+      "mean_steps_per_system": 2.98,
+      "total_cost": 746,
+      "mean_cost_per_system": 7.46,
+      "total_complexity": 596,
+      "mean_complexity_per_system": 5.96,
+      "new_failures_total": 0
+    }
+  },
+  "intended_interactions": [
+    "multi-violation systems",
+    "multi-target bundled repairs",
+    "shared human-oversight intervention path"
+  ],
+  "interpretation_guardrail": "This is a synthetic stress test of adaptation search/selection policies over encoded tactics; it does not establish legal compliance or superiority on unseen systems."
+}

@@ -1,0 +1,9 @@
+{
+  "requirements": 8,
+  "scenarios": 10,
+  "requirement_checks": 80,
+  "baseline_noncompliant": 10,
+  "final_compliant": 10,
+  "adaptation_success_rate": 1.0,
+  "mean_adaptation_steps": 7.1
+}

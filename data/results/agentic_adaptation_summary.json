@@ -1,0 +1,24 @@
+{
+  "method": "multi-agent model-level adaptation loop",
+  "agents": [
+    "ViolationDiagnoser",
+    "AdaptationGenerator",
+    "AdaptationEvaluator",
+    "AdaptationSelector",
+    "AgenticOrchestrator"
+  ],
+  "systems": 21,
+  "total_violations_before": 24,
+  "total_violations_after": 0,
+  "violations_reduced": 24,
+  "accepted_adaptation_steps": 21,
+  "systems_compliant_after": 21,
+  "system_compliance_rate_after": 1.0,
+  "source_models_persistently_modified": false,
+  "execution_scope": "isolated in-memory deep copies of system models",
+  "selection_objective": "maximize verified compliance improvement while avoiding new failures and minimizing cost/complexity",
+  "verification": "existing deterministic ACER assessor rerun after every accepted adaptation",
+  "method_note": "Research prototype. Model mutations occur only on isolated copies; successful re-assessment demonstrates benchmark/model-level remediation, not real-world legal compliance or production-safe autonomous deployment.",
+  "records_file": "F:\\KU Levan\\ACER_compliance_engine_starter\\acer_compliance_engine_v3_2\\data\\results\\agentic_adaptation_runs.json",
+  "initial_model_hash_count": 21
+}

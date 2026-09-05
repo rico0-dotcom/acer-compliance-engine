@@ -1,0 +1,22 @@
+{
+  "assessment_method": "deterministic_rule_based_engine_over_acER_system_model",
+  "systems": 21,
+  "requirements": 8,
+  "checks": 168,
+  "check_status_counts": {
+    "PASS": 144,
+    "FAIL": 24
+  },
+  "scenario_overall_status_counts": {
+    "COMPLIANT": 6,
+    "NON_COMPLIANT": 15
+  },
+  "evidence_total": 168,
+  "traceable_checks": 168,
+  "files": {
+    "trace_csv": "F:\\KU Levan\\ACER_compliance_engine_starter\\acer_compliance_engine_v3_2\\data\\results\\compliance_assessment_trace.csv",
+    "trace_jsonl": "F:\\KU Levan\\ACER_compliance_engine_starter\\acer_compliance_engine_v3_2\\data\\results\\compliance_assessment_trace.jsonl",
+    "reports_json": "F:\\KU Levan\\ACER_compliance_engine_starter\\acer_compliance_engine_v3_2\\data\\results\\compliance_assessment_reports.json"
+  },
+  "method_note": "This layer verifies the current ACER curated machine rules against system models. It does not by itself establish legal compliance beyond the encoded requirements and benchmark assumptions."
+}

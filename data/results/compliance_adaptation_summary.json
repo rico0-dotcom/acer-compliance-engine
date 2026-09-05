@@ -1,0 +1,12 @@
+{
+  "failed_checks": 24,
+  "adaptation_plans": 24,
+  "systems_with_violations": 15,
+  "requirements_with_violations": 8,
+  "candidate_adaptations_total": 46,
+  "execution_status": "PROPOSED_NOT_APPLIED",
+  "human_intervention_required": true,
+  "verification_required_after_adaptation": true,
+  "method_note": "Rule-based diagnostic/adaptation planning over deterministic assessment failures. Candidate actions are engineering proposals, not legal advice or proof of remediation effectiveness.",
+  "file": "F:\\KU Levan\\ACER_compliance_engine_starter\\acer_compliance_engine_v3_2\\data\\results\\compliance_adaptation_plans.json"
+}

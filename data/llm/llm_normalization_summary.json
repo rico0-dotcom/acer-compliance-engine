@@ -1,0 +1,21 @@
+{
+  "candidate_count": 70,
+  "mapping_relation_counts": {
+    "FAMILY_MATCH": 63,
+    "OUTSIDE_BASELINE": 7
+  },
+  "target_requirement_counts": {
+    "EUAI-R9-01": 12,
+    "EUAI-R10-01": 13,
+    "EUAI-R12-01": 6,
+    "EUAI-R13-01": 14,
+    "EUAI-R14-01": 7,
+    "EUAI-R14-02": 2,
+    "EUAI-R15-01": 8,
+    "EUAI-R50-01": 1
+  },
+  "coverage_of_eight_requirement_families": 8,
+  "unmapped_outside_baseline": 7,
+  "method": "deterministic article/provision heuristic with optional manual overrides",
+  "warning": "Mapping suggests requirement families; it does not establish legal equivalence or compliance validity."
+}
