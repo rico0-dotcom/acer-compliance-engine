@@ -168,7 +168,7 @@ acer-compliance-engine/
 │   ├── llm/
 │   └── results/
 ├── scripts/
-├── src/                  
+├── app/                  
 ├── tests/
 ├── notebooks/
 ├── README.md
