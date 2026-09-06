@@ -125,7 +125,9 @@ Observed relative changes:
 - **Agentic vs fixed-order:** steps **-29.9%**, cost **-9.5%**
 - **LLM-assisted vs agentic without LLM:** steps **+27.7%**, cost **-1.5%**, complexity **-24.0%**
 
-These are descriptive benchmark results on synthetic systems. 
+> **Metric interpretation:** Steps, cost, and complexity are modeled benchmark quantities defined by the ACER evaluation framework. They represent adaptation-search behavior within the synthetic benchmark and should not be interpreted as measured real-world engineering cost, runtime, or system complexity.
+
+These are descriptive benchmark results on synthetic systems. They should not be interpreted as statistically validated claims about general real-world performance.
 
 ## Human Review Status
 
@@ -167,27 +169,44 @@ acer-compliance-engine/
 │   ├── tactics/
 │   ├── llm/
 │   └── results/
-├── scripts/
-├── app/                  
-├── tests/
-├── notebooks/
+├── scripts/                # experiment and benchmark runners
+├── app/                    # core implementation           
+├── tests/                  # automated tests
+├── notebooks/              # analysis and visualization
 ├── README.md
 └── requirements.txt
 ```
+## How to Run
 
+```powershell
+git clone https://github.com/rico0-dotcom/acer-compliance-engine.git
+cd acer-compliance-engine
+
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+
+pip install -r requirements.txt
+
+python -m pytest -q
+
+python scripts\generate_random_adaptation_benchmark.py
+
+python scripts\run_random_adaptation_comparison.py
+```
 
 ## Reproducibility
 
-The repository is intended to make the experiments reproducible from the stored:
+The repository contains the requirement definitions, synthetic system definitions, experiment scripts, benchmark outputs, and evaluation files used for the reported experiments.
 
-- requirement definitions
-- synthetic system definitions
-- experiment scripts
-- benchmark outputs
-- statistical evaluation files
-- ablation-study outputs
+Randomized experiments should be run with explicit seeds. Stored benchmark and evaluation outputs are retained under `data/results/`.
 
-Randomized experiments should be run with explicit seeds.
+## LLM-assisted experiments
+
+The LLM-assisted experiments require an API credential supplied through an environment variable.
+
+Ex: $env:DIGITALOCEAN_TOKEN="YOUR_TOKEN"
+
+The LLM is restricted to proposing or ranking candidate adaptation actions. Deterministic rules execute the approved actions, re-run compliance assessment, and retain final PASS/FAIL authority.
 
 ## External Model Provider
 
